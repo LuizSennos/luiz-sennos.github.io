@@ -65,15 +65,24 @@
 <body>
 
   <header>
-    <h1>Luiz Sennos</h1>
-    <p>RPA Developer Sênior | UiPath | Power Automate | Automação de Processos</p>
+    <div style="display:flex; justify-content:flex-end; gap:10px; margin-bottom:20px;">
+      <button onclick="setLanguage('pt')" style="background:none; border:none; font-size:22px; cursor:pointer;">🇧🇷</button>
+      <button onclick="setLanguage('en')" style="background:none; border:none; font-size:22px; cursor:pointer;">🇺🇸</button>
+    </div>
+
+    <img src="images/foto-luiz.jpg" alt="Foto de Luiz Sennos" style="width:140px; height:140px; border-radius:50%; object-fit:cover; margin-bottom:20px; border:4px solid rgba(255,255,255,0.2);">
+    <h1 data-pt="Luiz Sennos" data-en="Luiz Sennos">Luiz Sennos</h1>
+    <p data-pt="RPA Developer Sênior | UiPath | Power Automate | Automação de Processos"
+       data-en="Senior RPA Developer | UiPath | Power Automate | Process Automation">
+       RPA Developer Sênior | UiPath | Power Automate | Automação de Processos
+    </p>
   </header>
 
   <section>
-    <h2>Sobre mim</h2>
-    <p>
-      Desenvolvedor RPA sênior com sólida experiência na automação de processos
-      empresariais, atuando desde o levantamento do processo até a entrega em produção.
+    <h2 data-pt="Sobre mim" data-en="About me">Sobre mim</h2>
+    <p data-pt="Desenvolvedor RPA sênior com sólida experiência na automação de processos empresariais, atuando desde o levantamento do processo até a entrega em produção. Especialista em criar robôs estáveis, escaláveis e orientados a resultado, reduzindo custos operacionais e aumentando a eficiência das áreas de negócio."
+       data-en="Senior RPA Developer with solid experience in business process automation, working end-to-end from process discovery to production delivery. Specialized in building stable, scalable, and results-driven automations that reduce operational costs and increase business efficiency.">
+      Desenvolvedor RPA sênior com sólida experiência na automação de processos empresariais, atuando desde o levantamento do processo até a entrega em produção.
       Especialista em criar robôs estáveis, escaláveis e orientados a resultado,
       reduzindo custos operacionais e aumentando a eficiência das áreas de negócio.
     </p>
@@ -83,8 +92,8 @@
     <h2>Projetos em destaque</h2>
 
     <div style="display:flex; gap:20px; align-items:center; flex-wrap:wrap; margin-bottom:20px;">
-     <img src="https://logospng.org/uploads/logospng.org_danone-logo_png_1024.png" alt="Danone" style="height:50px; padding:10px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
-    <img src="https://logospng.org/uploads/logo-lojas-riachuelo_png_1024.png" alt="Riachuelo" style="height:50px; padding:10px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Danone_logo.svg" alt="Danone" style="height:50px; background:white; padding:10px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Riachuelo_logo.svg" alt="Riachuelo" style="height:50px; background:white; padding:10px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
     </div>
 
     <ul class="projects">
@@ -110,7 +119,7 @@
   <section>
     <h2>Contato</h2>
     <p>
-      🔗 <a href="https://www.linkedin.com/in/luiz-nazareth-8b016463/?locale=pt_BR" target="_blank">LinkedIn</a><br><br>
+      🔗 <a href="https://www.linkedin.com/in/luiz-nazareth-8b016463/" target="_blank">LinkedIn</a><br><br>
       📧 <a href="mailto:seuemail@email.com">luizsennosnz@gmail.com</a>
     </p>
   </section>
@@ -118,6 +127,17 @@
   <footer>
     <p>© 2026 - Luiz Sennos | Automação que gera valor</p>
   </footer>
+
+<script>
+    function setLanguage(lang) {
+      document.querySelectorAll('[data-pt]').forEach(el => {
+        el.innerText = el.getAttribute('data-' + lang);
+      });
+    }
+
+    // idioma padrão
+    setLanguage('pt');
+  </script>
 
 </body>
 </html>
