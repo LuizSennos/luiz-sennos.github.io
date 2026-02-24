@@ -1,251 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Luiz Sennos | Sites Profissionais para Empresas</title>
+<meta charset="UTF-8">
+<title>Luiz Sennos</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: #0b0f1a;
+  color: #e5e7eb;
+}
 
-    body {
-      margin: 0;
-      font-family: "Inter", Arial, sans-serif;
-      background: #0b1120;
-      color: #e5e7eb;
-      line-height: 1.6;
-    }
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  position: relative;
+  overflow: hidden;
+}
 
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-      font-weight: 600;
-    }
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #22c55e55, transparent 70%);
+  top: -200px;
+  right: -200px;
+}
 
-    /* HERO */
-    .hero {
-      padding: 100px 20px;
-      text-align: center;
-      background: radial-gradient(circle at top, #0f172a, #020617);
-    }
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #38bdf855, transparent 70%);
+  bottom: -200px;
+  left: -200px;
+}
 
-    .hero img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 25px;
-      border: 4px solid rgba(255,255,255,0.15);
-    }
+.hero-content {
+  max-width: 600px;
+  z-index: 2;
+}
 
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
+.hero h1 {
+  font-size: 3.5rem;
+  margin: 0 0 10px;
+}
 
-    .hero p {
-      max-width: 780px;
-      margin: 0 auto 25px;
-      font-size: 1.2rem;
-      color: #cbd5f5;
-    }
+.hero h1 span {
+  color: #22c55e;
+}
 
-    .cta {
-      display: inline-block;
-      padding: 14px 30px;
-      border-radius: 999px;
-      background: #38bdf8;
-      color: #020617;
-      font-weight: bold;
-      font-size: 1rem;
-      transition: 0.2s;
-    }
+.hero p {
+  font-size: 1.2rem;
+  color: #cbd5f5;
+  margin-bottom: 30px;
+}
 
-    .cta:hover {
-      background: #0ea5e9;
-    }
+.hero-buttons a {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: bold;
+  margin-right: 15px;
+  transition: 0.2s;
+}
 
-    /* SECTIONS */
-    section {
-      max-width: 1100px;
-      margin: 80px auto;
-      padding: 0 20px;
-    }
+.btn-primary {
+  background: #22c55e;
+  color: #020617;
+}
 
-    h2 {
-      font-size: 2.2rem;
-      margin-bottom: 20px;
-      color: white;
-    }
+.btn-primary:hover {
+  background: #16a34a;
+}
 
-    /* ABOUT */
-    .about p {
-      max-width: 800px;
-      font-size: 1.05rem;
-      color: #d1d5db;
-    }
+.btn-outline {
+  border: 1px solid #22c55e;
+  color: #22c55e;
+}
 
-    /* SERVICES */
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-    }
+.btn-outline:hover {
+  background: #22c55e;
+  color: #020617;
+}
 
-    .service {
-      background: #020617;
-      border: 1px solid rgba(255,255,255,0.05);
-      border-radius: 16px;
-      padding: 30px;
-      transition: transform 0.2s;
-    }
+/* ILLUSTRATION */
+.hero-visual {
+  z-index: 2;
+}
 
-    .service:hover {
-      transform: translateY(-6px);
-    }
+.hero-visual img {
+  width: 380px;
+  animation: float 4s ease-in-out infinite;
+}
 
-    .service h3 {
-      margin-top: 0;
-      margin-bottom: 10px;
-      color: white;
-    }
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
 
-    .service p {
-      color: #cbd5f5;
-    }
+/* RESPONSIVO */
+@media(max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
 
-    /* LOGOS */
-    .logos {
-      display: flex;
-      gap: 30px;
-      flex-wrap: wrap;
-      align-items: center;
-      margin-top: 30px;
-    }
-
-    .logos span {
-      background: #020617;
-      padding: 14px 22px;
-      border-radius: 12px;
-      font-weight: bold;
-      color: #cbd5f5;
-      border: 1px solid rgba(255,255,255,0.05);
-    }
-
-    /* TECH */
-    .tech span {
-      display: inline-block;
-      margin: 8px;
-      padding: 10px 16px;
-      background: #020617;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,0.08);
-      font-size: 0.9rem;
-    }
-
-    /* FOOTER */
-    footer {
-      text-align: center;
-      padding: 50px 20px;
-      background: #020617;
-      color: #94a3b8;
-    }
-  </style>
+  .hero-visual img {
+    width: 260px;
+    margin-top: 40px;
+  }
+}
+</style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<div class="hero">
-  <img src="images/1683300698750.jpg" alt="Luiz Sennos">
+<section class="hero">
+  <div class="hero-content">
+    <p>👋 Olá, eu sou</p>
+    <h1>Luiz <span>Sennos</span></h1>
+    <p>
+      Desenvolvedor de sites e sistemas profissionais para empresas
+      que precisam de presença digital moderna, segura e confiável.
+    </p>
 
-  <h1>Sites e Sistemas Profissionais</h1>
-
-  <p>
-    Desenvolvimento de sites modernos e sistemas sob medida para empresas que
-    precisam de presença digital profissional, performance e confiança.
-  </p>
-
-  <a class="cta" href="mailto:luizsennosnz@gmail.com">
-    Falar sobre meu projeto
-  </a>
-</div>
-
-<!-- ABOUT -->
-<section class="about">
-  <h2>Quem está por trás</h2>
-  <p>
-    Sou desenvolvedor sênior com experiência em projetos corporativos,
-    atuando na criação de sites, sistemas web e automações empresariais.
-    Já trabalhei em ambientes de alta responsabilidade, trazendo
-    padrão corporativo, segurança e visão de negócio para cada projeto.
-  </p>
-
-  <div class="logos">
-    <span>Siemens Healthineers</span>
-    <span>Danone</span>
-    <span>Riachuelo</span>
-    <span>Banco BV</span>
-    <span>Icatu Seguros</span>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section>
-  <h2>O que eu faço</h2>
-
-  <div class="services">
-    <div class="service">
-      <h3>Sites Institucionais</h3>
-      <p>
-        Sites modernos, rápidos e responsivos para empresas que
-        precisam transmitir credibilidade e profissionalismo.
-      </p>
-    </div>
-
-    <div class="service">
-      <h3>Sites Comerciais & Landing Pages</h3>
-      <p>
-        Páginas focadas em conversão, geração de leads e
-        integração com WhatsApp e formulários.
-      </p>
-    </div>
-
-    <div class="service">
-      <h3>Sistemas Web Sob Medida</h3>
-      <p>
-        Sistemas personalizados, dashboards e integrações
-        para organizar processos e apoiar o crescimento do negócio.
-      </p>
+    <div class="hero-buttons">
+      <a href="mailto:luizsennosnz@gmail.com" class="btn-primary">Falar comigo</a>
+      <a href="#portfolio" class="btn-outline">Ver projetos</a>
     </div>
   </div>
-</section>
 
-<!-- TECH -->
-<section>
-  <h2>Tecnologias</h2>
-  <div class="tech">
-    <span>HTML / CSS / JavaScript</span>
-    <span>React / Next.js</span>
-    <span>Node.js</span>
-    <span>Python</span>
-    <span>APIs</span>
-    <span>SQL</span>
-    <span>Automação</span>
-    <span>Cloud</span>
+  <div class="hero-visual">
+    <!-- pode trocar por ilustração SVG -->
+    <img src="https://undraw.co/api/illustrations/website.svg" alt="Ilustração">
   </div>
 </section>
-
-<!-- FOOTER -->
-<footer>
-  <p>
-    © 2026 – Luiz Sennos<br>
-    <a href="https://www.linkedin.com/in/luiz-nazareth-8b016463/" target="_blank">LinkedIn</a> |
-    <a href="mailto:luizsennosnz@gmail.com">Email</a>
-  </p>
-</footer>
 
 </body>
 </html>
