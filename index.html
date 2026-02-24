@@ -1,100 +1,131 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Luiz Sennos | Soluções Digitais</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+<meta charset="UTF-8">
+<title>Luiz Sennos | Soluções Digitais Profissionais</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-<header class="hero">
-  <p class="terminal">$ echo "Olá, eu sou"</p>
-  <h1>Luiz <span>Sennos</span></h1>
-  <p class="desc">
-    Desenvolvo sites e sistemas profissionais para empresas
-    que precisam transmitir credibilidade, organizar processos
-    e vender mais com tecnologia.
-  </p>
-  <a href="#contato" class="btn-primary">quero um orçamento</a>
+<header>
+  <div class="nav">
+    <strong>luizsennos.dev</strong>
+    <nav>
+      <a href="#sobre">sobre</a>
+      <a href="#servicos">serviços</a>
+      <a href="#portfolio">projetos</a>
+      <a href="#contato" class="cta">contato</a>
+    </nav>
+  </div>
 </header>
 
-<section class="sobre">
-  <h2>Perfil técnico</h2>
-  <p>
-    Atuo no desenvolvimento de soluções digitais para empresas
-    que precisam de organização, escala e confiabilidade.
-    Experiência em projetos envolvendo finanças, automação,
-    sistemas internos, RH e plataformas web.
-  </p>
+<section class="hero">
+  <div class="hero-content">
+    <p class="top">$ echo "Olá, eu sou"</p>
+    <h1>Luiz <span>Sennos</span></h1>
+    <p class="desc">
+      Desenvolvedor focado em soluções digitais profissionais.<br>
+      Crio sites e sistemas que organizam processos,<br>
+      transmitem credibilidade e ajudam empresas a vender mais.
+    </p>
 
-  <ul>
-    <li>✔ soluções pensadas para o negócio</li>
-    <li>✔ experiência em ambientes corporativos</li>
-    <li>✔ entrega clara, organizada e profissional</li>
-  </ul>
+    <div class="hero-buttons">
+      <a href="#sobre" class="btn-primary">conhecer meu trabalho</a>
+      <a href="#portfolio" class="btn-outline">ver projetos</a>
+    </div>
+  </div>
 </section>
 
-<section class="projetos">
+<section class="about" id="sobre">
+  <div class="about-container">
+    <div class="about-photo">
+      <img src="assets/img/foto.jpg" alt="Luiz Sennos">
+    </div>
+    <div>
+      <h2>Perfil técnico</h2>
+      <p>
+        Atuo no desenvolvimento de soluções digitais sob medida para empresas.
+        Do layout ao código, entrego produtos rápidos, confiáveis e pensados
+        para o negócio.
+      </p>
+      <ul>
+        <li>✔ sistemas web e plataformas internas</li>
+        <li>✔ automação de processos empresariais</li>
+        <li>✔ sites institucionais e landing pages</li>
+        <li>✔ foco em performance e conversão</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="servicos">
+  <div class="services-container">
+    <h2>Serviços</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Sites Profissionais</h3>
+        <p>Presença digital sólida, rápida e confiável.</p>
+      </div>
+      <div class="service-card">
+        <h3>Sistemas Sob Medida</h3>
+        <p>Plataformas internas, portais e dashboards.</p>
+      </div>
+      <div class="service-card">
+        <h3>Automação Empresarial</h3>
+        <p>Redução de tarefas manuais e erros operacionais.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio" id="portfolio">
   <h2>Projetos em destaque</h2>
-  <p class="subtitle">
-    Alguns exemplos de soluções desenvolvidas recentemente.
+  <p class="portfolio-sub">
+    Exemplos de soluções desenvolvidas recentemente.
   </p>
 
-  <div class="cards">
-    <div class="card">
-      <h3>Sistema Financeiro Corporativo</h3>
-      <p>Controle de dados, relatórios e integrações.</p>
+  <div class="portfolio-grid">
+    <div class="project">
+      <h3>Sistema Financeiro</h3>
+      <p>Controle financeiro, relatórios e integrações.</p>
     </div>
-
-    <div class="card">
+    <div class="project">
       <h3>Automação Empresarial</h3>
-      <p>Redução de tarefas manuais e erros operacionais.</p>
+      <p>Fluxos automatizados para operações internas.</p>
     </div>
-
-    <div class="card">
+    <div class="project">
       <h3>Plataforma Interna</h3>
       <p>Gestão de usuários, permissões e processos.</p>
     </div>
   </div>
 </section>
 
-<section class="autoridade">
-  <h2>Experiência em projetos de grande porte</h2>
-
-  <p>
-    Atuação em mais de <strong>80 projetos</strong> envolvendo
-    sistemas financeiros, automações corporativas,
-    plataformas internas, RH, integrações e web.
-  </p>
-
-  <p>
-    Experiência em ambientes críticos, operações de alto volume
-    e projetos para empresas de grande porte,
-    sempre com foco em estabilidade, segurança e resultado.
-  </p>
-
-  <p class="note">
-    Detalhes técnicos e estudos de caso completos
-    são apresentados em conversa direta.
-  </p>
+<section class="authority">
+  <div class="authority-container">
+    <h2>Experiência em projetos de alta complexidade</h2>
+    <p>
+      Mais de <strong>80 projetos entregues</strong> envolvendo sistemas financeiros,
+      plataformas corporativas, automações empresariais, soluções para RH,
+      integrações com ERPs, SAP, impressão de etiquetas em larga escala,
+      aplicações web e sistemas internos críticos.
+    </p>
+    <p class="authority-highlight">
+      Soluções pensadas para empresas que precisam de estabilidade,
+      segurança e escala.
+    </p>
+  </div>
 </section>
 
-<section class="contato" id="contato">
-  <h2>Vamos falar sobre seu projeto?</h2>
-  <p>
-    Me conte o que você precisa e te digo
-    se faz sentido — sem enrolação.
-  </p>
-
-  <a href="mailto:luizsennosnz@gmail.com" class="btn-primary">
-    solicitar orçamento
-  </a>
+<section class="contact" id="contato">
+  <h2>Vamos conversar?</h2>
+  <p>Me conte rapidamente o que sua empresa precisa.</p>
+  <a href="https://wa.me/5521999999999" target="_blank">falar no WhatsApp</a>
 </section>
-
-<footer>
-  <p>© 2026 Luiz Sennos</p>
-</footer>
 
 </body>
 </html>
