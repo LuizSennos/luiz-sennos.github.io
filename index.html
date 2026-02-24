@@ -1,143 +1,252 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luiz Sennos | RPA Developer Sênior</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luiz Sennos | Sites e Sistemas Profissionais</title>
+
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
       margin: 0;
       background: #f5f7fa;
       color: #333;
+      line-height: 1.6;
     }
+
     header {
+      background: linear-gradient(135deg, #0f172a, #020617);
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto 15px;
+      opacity: 0.95;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #0f172a;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #020617;
+    }
+
+    .card ul {
+      padding-left: 18px;
+    }
+
+    .card li {
+      margin-bottom: 8px;
+    }
+
+    .highlight {
       background: #0f172a;
       color: white;
       padding: 60px 20px;
       text-align: center;
     }
-    header h1 {
-      margin-bottom: 10px;
-      font-size: 2.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
-    section {
+
+    .highlight p {
       max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
+      margin: auto;
+      font-size: 1.15rem;
+      opacity: 0.95;
     }
-    h2 {
-      color: #0f172a;
-      margin-bottom: 15px;
-    }
-    .projects li {
-      margin-bottom: 10px;
-    }
+
     .tech span {
       display: inline-block;
       background: #e2e8f0;
-      padding: 8px 12px;
-      margin: 5px;
-      border-radius: 6px;
+      padding: 10px 14px;
+      margin: 6px;
+      border-radius: 8px;
       font-size: 0.9rem;
-    }
-    footer {
-      background: #0f172a;
-      color: white;
-      text-align: center;
-      padding: 30px 20px;
-      margin-top: 60px;
-    }
-    a {
-      color: #38bdf8;
-      text-decoration: none;
       font-weight: bold;
     }
+
+    footer {
+      background: #020617;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 80px;
+    }
+
+    a {
+      color: #38bdf8;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
     a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <div style="display:flex; justify-content:flex-end; gap:10px; margin-bottom:20px;">
-      <button onclick="setLanguage('pt')" style="background:none; border:none; font-size:22px; cursor:pointer;">🇧🇷</button>
-      <button onclick="setLanguage('en')" style="background:none; border:none; font-size:22px; cursor:pointer;">🇺🇸</button>
+<!-- HERO -->
+<header>
+  <img src="images/1683300698750.jpg"
+       alt="Luiz Sennos"
+       style="width:150px;height:150px;border-radius:50%;object-fit:cover;margin-bottom:25px;border:4px solid rgba(255,255,255,0.25);">
+
+  <h1>Sites e Sistemas Profissionais para Empresas</h1>
+
+  <p>
+    Desenvolvimento de sites modernos, sistemas web sob medida e automações inteligentes,
+    com padrão corporativo e foco em resultado.
+  </p>
+
+  <p style="font-size:1rem;opacity:0.9;">
+    Experiência em projetos para empresas como
+    <strong>:contentReference[oaicite:0]{index=0}</strong>,
+    <strong>:contentReference[oaicite:1]{index=1}</strong>,
+    <strong>:contentReference[oaicite:2]{index=2}</strong>,
+    <strong>:contentReference[oaicite:3]{index=3}</strong>
+    e grandes operações empresariais.
+  </p>
+</header>
+
+<!-- SOBRE -->
+<section>
+  <h2>Desenvolvimento digital com visão de negócio</h2>
+
+  <p>
+    Sou desenvolvedor sênior especializado na criação de
+    <strong>sites profissionais, sistemas web e automações empresariais</strong>,
+    atuando desde o entendimento do negócio até a entrega da solução em produção.
+  </p>
+
+  <p>
+    Minha experiência vem de ambientes corporativos onde performance, segurança
+    e estabilidade são requisitos críticos. Trago esse mesmo padrão para empresas
+    que precisam de uma presença digital sólida, confiável e preparada para crescer.
+  </p>
+
+  <p>
+    Não entrego apenas um site bonito — entrego <strong>soluções digitais que geram
+    resultado, organizam processos e apoiam o crescimento do negócio</strong>.
+  </p>
+</section>
+
+<!-- SOLUÇÕES -->
+<section>
+  <h2>Soluções Digitais para Empresas</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>🟦 Sites Institucionais Profissionais</h3>
+      <p>Para empresas que precisam transmitir credibilidade e profissionalismo.</p>
+      <ul>
+        <li>Design moderno e responsivo</li>
+        <li>Alta performance e velocidade</li>
+        <li>SEO básico e boas práticas</li>
+        <li>Segurança e estabilidade</li>
+        <li>Pronto para produção</li>
+      </ul>
     </div>
 
-    <img src="images/1683300698750.jpg" alt="Foto de Luiz Sennos" style="width:140px; height:140px; border-radius:50%; object-fit:cover; margin-bottom:20px; border:4px solid rgba(255,255,255,0.2);">
-    <h1 data-pt="Luiz Sennos" data-en="Luiz Sennos">Luiz Sennos</h1>
-    <p data-pt="RPA Developer Sênior | UiPath | Power Automate | Automação de Processos"
-       data-en="Senior RPA Developer | UiPath | Power Automate | Process Automation">
-       RPA Developer Sênior | UiPath | Power Automate | Automação de Processos
-    </p>
-  </header>
-
-  <section>
-    <h2 data-pt="Sobre mim" data-en="About me">Sobre mim</h2>
-    <p data-pt="Desenvolvedor RPA sênior com sólida experiência na automação de processos empresariais, atuando desde o levantamento do processo até a entrega em produção. Especialista em criar robôs estáveis, escaláveis e orientados a resultado, reduzindo custos operacionais e aumentando a eficiência das áreas de negócio."
-       data-en="Senior RPA Developer with solid experience in business process automation, working end-to-end from process discovery to production delivery. Specialized in building stable, scalable, and results-driven automations that reduce operational costs and increase business efficiency.">
-      Desenvolvedor RPA sênior com sólida experiência na automação de processos empresariais, atuando desde o levantamento do processo até a entrega em produção.
-      Especialista em criar robôs estáveis, escaláveis e orientados a resultado,
-      reduzindo custos operacionais e aumentando a eficiência das áreas de negócio.
-    </p>
-  </section>
-
-  <section>
-    <h2>Projetos em destaque</h2>
-
-    <div style="display:flex; gap:20px; align-items:center; flex-wrap:wrap; margin-bottom:20px;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Danone_logo.svg" alt="Danone" style="height:50px; background:white; padding:10px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Riachuelo_logo.svg" alt="Riachuelo" style="height:50px; background:white; padding:10px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+    <div class="card">
+      <h3>🟩 Sites Comerciais & Landing Pages</h3>
+      <p>Para quem quer gerar leads e aumentar conversões.</p>
+      <ul>
+        <li>Estrutura focada em conversão</li>
+        <li>Integração com WhatsApp</li>
+        <li>Formulários inteligentes</li>
+        <li>Copy estratégica</li>
+        <li>Experiência do usuário otimizada</li>
+      </ul>
     </div>
 
-    <ul class="projects">
-      <li>🤖 Automação de impressão em larga escala com controle, monitoramento e governança</li>
-      <li>🏢 Desenvolvimento e sustentação de automações RPA para grandes clientes corporativos como <strong>Danone</strong> e <strong>Riachuelo</strong></li>
-      <li>📊 Geração, consolidação e automação de relatórios financeiros e operacionais</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Tecnologias</h2>
-    <div class="tech">
-      <span>UiPath</span>
-      <span>Power Automate</span>
-      <span>Power Automate Desktop</span>
-      <span>PowerShell</span>
-      <span>Excel Avançado</span>
-      <span>APIs</span>
-      <span>Git</span>
+    <div class="card">
+      <h3>🟨 Sistemas Web Sob Medida</h3>
+      <p>Para empresas que precisam ir além de um site.</p>
+      <ul>
+        <li>Sistemas administrativos personalizados</li>
+        <li>Painéis e dashboards</li>
+        <li>Integrações com APIs</li>
+        <li>Automação de processos</li>
+        <li>Escalável para crescer</li>
+      </ul>
     </div>
-  </section>
 
-  <section>
-    <h2>Contato</h2>
-    <p>
-      🔗 <a href="https://www.linkedin.com/in/luiz-nazareth-8b016463/" target="_blank">LinkedIn</a><br><br>
-      📧 <a href="mailto:seuemail@email.com">luizsennosnz@gmail.com</a>
-    </p>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2026 - Luiz Sennos | Automação que gera valor</p>
-  </footer>
+<!-- DIFERENCIAL -->
+<section class="highlight">
+  <h2>Por que trabalhar comigo?</h2>
+  <p>
+    Enquanto muitos desenvolvedores entregam apenas um site,
+    eu entrego <strong>estrutura digital com padrão corporativo</strong>.
+    Minha experiência em projetos críticos garante soluções estáveis,
+    seguras e pensadas para acompanhar o crescimento da empresa.
+  </p>
+</section>
 
-<script>
-    function setLanguage(lang) {
-      document.querySelectorAll('[data-pt]').forEach(el => {
-        el.innerText = el.getAttribute('data-' + lang);
-      });
-    }
+<!-- TECNOLOGIAS -->
+<section>
+  <h2>Tecnologias e Ferramentas</h2>
+  <div class="tech">
+    <span>HTML / CSS / JavaScript</span>
+    <span>React / Next.js</span>
+    <span>Node.js</span>
+    <span>Python</span>
+    <span>APIs REST</span>
+    <span>SQL</span>
+    <span>Automação de Processos</span>
+    <span>Git</span>
+    <span>Cloud</span>
+  </div>
+</section>
 
-    // idioma padrão
-    setLanguage('pt');
-  </script>
+<!-- CONTATO -->
+<section>
+  <h2>Contato</h2>
+  <p>
+    📩 Vamos conversar sobre o seu projeto.<br><br>
+    🔗 <a href="https://www.linkedin.com/in/luiz-nazareth-8b016463/" target="_blank">LinkedIn</a><br><br>
+    📧 <a href="mailto:luizsennosnz@gmail.com">luizsennosnz@gmail.com</a>
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 – Luiz Sennos | Soluções digitais que geram valor</p>
+</footer>
 
 </body>
 </html>
