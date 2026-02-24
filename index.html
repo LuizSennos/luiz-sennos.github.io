@@ -1,21 +1,24 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Luiz Sennos | Soluções Digitais Profissionais</title>
+<title>Luiz Sennos | Sites Profissionais</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <header>
   <div class="nav">
-    <strong>luizsennos.dev</strong>
-    <nav>
+    <div class="brand">
+      <strong>luizsennos.dev</strong>
+      <button class="menu-toggle">☰</button>
+    </div>
+    <nav id="menu">
       <a href="#sobre">sobre</a>
       <a href="#servicos">serviços</a>
       <a href="#portfolio">projetos</a>
@@ -29,14 +32,12 @@
     <p class="top">$ echo "Olá, eu sou"</p>
     <h1>Luiz <span>Sennos</span></h1>
     <p class="desc">
-      Desenvolvedor focado em soluções digitais profissionais.<br>
-      Crio sites e sistemas que organizam processos,<br>
-      transmitem credibilidade e ajudam empresas a vender mais.
+      Desenvolvo sites e sistemas profissionais para empresas que precisam
+      transmitir credibilidade, organizar processos e vender mais com tecnologia.
     </p>
-
     <div class="hero-buttons">
-      <a href="#sobre" class="btn-primary">conhecer meu trabalho</a>
-      <a href="#portfolio" class="btn-outline">ver projetos</a>
+      <a href="#contato" class="btn-primary">falar comigo</a>
+      <a href="#sobre" class="btn-outline">sobre mim</a>
     </div>
   </div>
 </section>
@@ -44,20 +45,18 @@
 <section class="about" id="sobre">
   <div class="about-container">
     <div class="about-photo">
-      <img src="assets/img/foto.jpg" alt="Luiz Sennos">
+      <img src="sua-foto.jpg" alt="Luiz Sennos">
     </div>
     <div>
-      <h2>Perfil técnico</h2>
+      <h2>Sobre mim</h2>
       <p>
-        Atuo no desenvolvimento de soluções digitais sob medida para empresas.
-        Do layout ao código, entrego produtos rápidos, confiáveis e pensados
-        para o negócio.
+        Atuo no desenvolvimento de soluções digitais robustas, unindo design,
+        performance e automação para empresas de médio e grande porte.
       </p>
       <ul>
-        <li>✔ sistemas web e plataformas internas</li>
-        <li>✔ automação de processos empresariais</li>
-        <li>✔ sites institucionais e landing pages</li>
-        <li>✔ foco em performance e conversão</li>
+        <li>✔ mais de 80 projetos entregues</li>
+        <li>✔ automações, sistemas e web</li>
+        <li>✔ foco em resultado e escala</li>
       </ul>
     </div>
   </div>
@@ -69,15 +68,15 @@
     <div class="services-grid">
       <div class="service-card">
         <h3>Sites Profissionais</h3>
-        <p>Presença digital sólida, rápida e confiável.</p>
+        <p>Sites rápidos, modernos e focados em conversão.</p>
       </div>
       <div class="service-card">
         <h3>Sistemas Sob Medida</h3>
-        <p>Plataformas internas, portais e dashboards.</p>
+        <p>Soluções personalizadas para processos internos.</p>
       </div>
       <div class="service-card">
-        <h3>Automação Empresarial</h3>
-        <p>Redução de tarefas manuais e erros operacionais.</p>
+        <h3>Automação & Integrações</h3>
+        <p>RPA, APIs e integrações corporativas.</p>
       </div>
     </div>
   </div>
@@ -85,47 +84,34 @@
 
 <section class="portfolio" id="portfolio">
   <h2>Projetos em destaque</h2>
-  <p class="portfolio-sub">
-    Exemplos de soluções desenvolvidas recentemente.
-  </p>
-
   <div class="portfolio-grid">
     <div class="project">
-      <h3>Sistema Financeiro</h3>
-      <p>Controle financeiro, relatórios e integrações.</p>
+      <h3>Sistema Financeiro Corporativo</h3>
+      <p>Automação de contas, relatórios e integrações bancárias.</p>
     </div>
     <div class="project">
       <h3>Automação Empresarial</h3>
-      <p>Fluxos automatizados para operações internas.</p>
+      <p>Robôs para SAP, ServiceNow e sistemas internos.</p>
     </div>
     <div class="project">
       <h3>Plataforma Interna</h3>
-      <p>Gestão de usuários, permissões e processos.</p>
+      <p>Gestão de usuários, permissões e fluxos.</p>
     </div>
-  </div>
-</section>
-
-<section class="authority">
-  <div class="authority-container">
-    <h2>Experiência em projetos de alta complexidade</h2>
-    <p>
-      Mais de <strong>80 projetos entregues</strong> envolvendo sistemas financeiros,
-      plataformas corporativas, automações empresariais, soluções para RH,
-      integrações com ERPs, SAP, impressão de etiquetas em larga escala,
-      aplicações web e sistemas internos críticos.
-    </p>
-    <p class="authority-highlight">
-      Soluções pensadas para empresas que precisam de estabilidade,
-      segurança e escala.
-    </p>
   </div>
 </section>
 
 <section class="contact" id="contato">
   <h2>Vamos conversar?</h2>
-  <p>Me conte rapidamente o que sua empresa precisa.</p>
-  <a href="https://wa.me/5521999999999" target="_blank">falar no WhatsApp</a>
+  <a href="mailto:luizsennosnz@gmail.com">entrar em contato</a>
 </section>
+
+<script>
+const toggle = document.querySelector('.menu-toggle');
+const menu = document.getElementById('menu');
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('open');
+});
+</script>
 
 </body>
 </html>
