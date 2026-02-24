@@ -5,17 +5,28 @@
 <title>Luiz Sennos | Sites Profissionais</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Fonte estilo tech / console -->
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 *{box-sizing:border-box}
 
+:root{
+  --bg-dark:#0f1115;
+  --bg-mid:#16181d;
+  --bg-light:#f3f4f6;
+  --card:#1c1f26;
+  --border:#2a2e37;
+  --text:#d1d5db;
+  --muted:#9ca3af;
+  --accent:#22c55e;
+  --black:#020617;
+}
+
 body{
   margin:0;
   font-family:'JetBrains Mono', monospace;
-  background:#070b14;
-  color:#d1d5db;
+  background:var(--bg-dark);
+  color:var(--text);
 }
 
 /* ===== HEADER ===== */
@@ -24,9 +35,9 @@ header{
   top:0;
   width:100%;
   z-index:20;
-  background:rgba(7,11,20,.85);
+  background:rgba(15,17,21,.9);
   backdrop-filter:blur(12px);
-  border-bottom:1px solid #1f2937;
+  border-bottom:1px solid var(--border);
 }
 .nav{
   max-width:1200px;
@@ -37,19 +48,19 @@ header{
   align-items:center;
 }
 .nav strong{
-  color:#22c55e;
+  color:var(--accent);
   font-weight:500;
 }
 .nav a{
-  color:#9ca3af;
+  color:var(--muted);
   text-decoration:none;
   margin-left:22px;
-  font-size:.9rem;
+  font-size:.85rem;
 }
-.nav a:hover{color:#e5e7eb}
+.nav a:hover{color:var(--text)}
 .nav a.cta{
-  background:#22c55e;
-  color:#020617;
+  background:var(--accent);
+  color:var(--black);
   padding:8px 18px;
   border-radius:999px;
   font-weight:500;
@@ -64,33 +75,32 @@ header{
   padding:120px 20px 80px;
   position:relative;
   text-align:center;
-  overflow:hidden;
 }
 .hero::before{
   content:"";
   position:absolute;
   inset:0;
   background:
-    radial-gradient(circle at 80% 10%, #22c55e33, transparent 40%),
-    radial-gradient(circle at 20% 90%, #38bdf833, transparent 40%);
+    radial-gradient(circle at 80% 10%, #22c55e22, transparent 45%),
+    radial-gradient(circle at 20% 90%, #9ca3af22, transparent 45%);
 }
 .hero-content{
   max-width:720px;
   z-index:2;
 }
 .hero p.top{
-  color:#22c55e;
-  font-size:.9rem;
+  color:var(--accent);
+  font-size:.85rem;
 }
 .hero h1{
-  font-size:3.2rem;
+  font-size:3.1rem;
   font-weight:400;
   margin:10px 0 20px;
 }
-.hero h1 span{color:#22c55e}
+.hero h1 span{color:var(--accent)}
 .hero p.desc{
-  color:#9ca3af;
-  font-size:1rem;
+  color:var(--muted);
+  font-size:.95rem;
   line-height:1.6;
 }
 .hero-buttons a{
@@ -98,22 +108,22 @@ header{
   margin:30px 10px 0;
   padding:12px 26px;
   border-radius:999px;
-  font-size:.9rem;
+  font-size:.85rem;
   text-decoration:none;
 }
 .btn-primary{
-  background:#22c55e;
-  color:#020617;
+  background:var(--accent);
+  color:var(--black);
 }
 .btn-outline{
-  border:1px solid #22c55e;
-  color:#22c55e;
+  border:1px solid var(--accent);
+  color:var(--accent);
 }
 
-/* ===== SOBRE (ICE) ===== */
+/* ===== SOBRE (CLARO) ===== */
 .about{
-  background:#f8fafc;
-  color:#020617;
+  background:var(--bg-light);
+  color:var(--black);
   padding:120px 20px;
 }
 .about-container{
@@ -128,14 +138,14 @@ header{
   width:100%;
   max-width:260px;
   border-radius:18px;
-  filter:grayscale(100%) contrast(1.1);
+  filter:grayscale(100%) contrast(1.05);
 }
 .about h2{
   font-size:2.2rem;
   font-weight:400;
 }
 .about p{
-  color:#334155;
+  color:#374151;
   line-height:1.7;
 }
 .about ul{
@@ -146,13 +156,13 @@ header{
 .about li{
   margin-bottom:8px;
   color:#16a34a;
-  font-size:.95rem;
+  font-size:.9rem;
 }
 
 /* ===== SERVIÇOS ===== */
 .services{
   padding:120px 20px;
-  background:#070b14;
+  background:var(--bg-mid);
 }
 .services-container{
   max-width:1100px;
@@ -170,36 +180,36 @@ header{
   gap:30px;
 }
 .service-card{
-  background:#020617;
-  border:1px solid #1f2937;
+  background:var(--card);
+  border:1px solid var(--border);
   padding:36px 28px;
   border-radius:18px;
   transition:.3s;
 }
 .service-card:hover{
-  border-color:#22c55e;
+  border-color:var(--accent);
   transform:translateY(-6px);
 }
 .service-card h3{
   font-weight:400;
-  font-size:1.2rem;
+  font-size:1.15rem;
   margin-bottom:12px;
 }
 .service-card p{
-  color:#9ca3af;
-  font-size:.95rem;
+  color:var(--muted);
+  font-size:.9rem;
 }
 
-/* ===== PORTFÓLIO (ICE) ===== */
+/* ===== PORTFÓLIO (CLARO) ===== */
 .portfolio{
-  background:#eef2f7;
+  background:#e5e7eb;
   padding:120px 20px;
 }
 .portfolio h2{
   text-align:center;
   font-size:2.2rem;
   font-weight:400;
-  color:#020617;
+  color:var(--black);
 }
 .portfolio-grid{
   max-width:1100px;
@@ -212,13 +222,13 @@ header{
   background:white;
   border-radius:18px;
   padding:32px;
-  border:1px solid #e5e7eb;
-  color:#020617;
+  border:1px solid #d1d5db;
+  color:var(--black);
 }
 
 /* ===== CONTATO ===== */
 .contact{
-  background:#020617;
+  background:var(--bg-dark);
   padding:120px 20px;
   text-align:center;
 }
@@ -229,11 +239,11 @@ header{
 .contact a{
   display:inline-block;
   margin-top:30px;
-  background:#22c55e;
-  color:#020617;
+  background:var(--accent);
+  color:var(--black);
   padding:14px 34px;
   border-radius:999px;
-  font-size:.9rem;
+  font-size:.85rem;
   text-decoration:none;
 }
 
@@ -246,7 +256,7 @@ header{
     text-align:center;
   }
   .about-photo img{margin:auto}
-  .hero h1{font-size:2.4rem}
+  .hero h1{font-size:2.3rem}
 }
 </style>
 </head>
@@ -270,8 +280,8 @@ header{
     <p class="top">$ echo "Olá, eu sou"</p>
     <h1>Luiz <span>Sennos</span></h1>
     <p class="desc">
-      Desenvolvo sites profissionais focados em performance,
-      clareza e conversão para empresas que querem vender mais.
+      Desenvolvo sites profissionais com visual limpo,
+      rápido e confiável para empresas que querem vender mais.
     </p>
     <div class="hero-buttons">
       <a href="#contato" class="btn-primary">quero um site</a>
@@ -294,7 +304,7 @@ header{
       </p>
       <ul>
         <li>✔ código limpo e performático</li>
-        <li>✔ visual moderno e confiável</li>
+        <li>✔ visual elegante e profissional</li>
         <li>✔ foco em conversão</li>
       </ul>
     </div>
