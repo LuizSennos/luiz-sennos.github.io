@@ -1,105 +1,323 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Luiz Sennos | Sites Profissionais</title>
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="UTF-8" />
+<title>Luiz Sennos | Sites Profissionais</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- FONTES -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg-dark:#0e1116;
+  --bg-light:#f5f7fa;
+  --card:#161b22;
+  --text:#e6edf3;
+  --muted:#9ba3af;
+  --accent:#4f8cff;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Inter, sans-serif;
+  background:var(--bg-dark);
+  color:var(--text);
+}
+
+/* ===== HERO ===== */
+.hero{
+  min-height:90vh;
+  display:flex;
+  align-items:flex-start;
+  padding:120px 80px 80px;
+  position:relative;
+  overflow:hidden;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  width:500px;height:500px;
+  background:radial-gradient(circle, rgba(79,140,255,.25), transparent 70%);
+  top:-200px;right:-150px;
+}
+
+.hero-content{
+  max-width:640px;
+}
+
+.hero small{
+  font-family:JetBrains Mono, monospace;
+  color:var(--accent);
+  letter-spacing:1px;
+}
+
+.hero h1{
+  font-size:3.6rem;
+  font-weight:500;
+  margin:20px 0;
+}
+
+.hero p{
+  color:var(--muted);
+  line-height:1.6;
+  max-width:520px;
+}
+
+.hero-buttons{
+  margin-top:40px;
+}
+
+.hero-buttons a{
+  text-decoration:none;
+  padding:14px 26px;
+  border-radius:8px;
+  font-weight:500;
+  margin-right:14px;
+  transition:.2s;
+}
+
+.btn-primary{
+  background:var(--accent);
+  color:#fff;
+}
+
+.btn-primary:hover{opacity:.85}
+
+.btn-outline{
+  border:1px solid var(--accent);
+  color:var(--accent);
+}
+
+.btn-outline:hover{
+  background:var(--accent);
+  color:#fff;
+}
+
+/* ===== SOBRE ===== */
+.about{
+  background:var(--bg-light);
+  color:#111;
+  padding:100px 80px;
+}
+
+.about-container{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  gap:60px;
+  align-items:center;
+}
+
+.about img{
+  width:100%;
+  max-width:280px;
+  border-radius:16px;
+  box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+.about h2{
+  font-size:2.4rem;
+  margin-bottom:20px;
+}
+
+.about p{
+  line-height:1.7;
+  margin-bottom:18px;
+}
+
+.about ul{
+  list-style:none;
+  padding:0;
+}
+
+.about li{
+  margin-bottom:10px;
+  font-weight:500;
+}
+
+/* ===== PROJETOS ===== */
+.projects{
+  background:var(--bg-dark);
+  padding:100px 80px;
+}
+
+.projects h2{
+  text-align:center;
+  font-size:2.6rem;
+  margin-bottom:60px;
+}
+
+.projects-grid{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.project-card{
+  background:var(--card);
+  padding:30px;
+  border-radius:16px;
+  transition:.3s;
+  border:1px solid #222;
+}
+
+.project-card:hover{
+  transform:translateY(-8px);
+  border-color:var(--accent);
+}
+
+.project-card h3{
+  margin:10px 0;
+}
+
+.project-card p{
+  color:var(--muted);
+  font-size:.95rem;
+}
+
+/* ===== PROCESSO ===== */
+.process{
+  background:var(--bg-light);
+  color:#111;
+  padding:100px 80px;
+}
+
+.process h2{
+  text-align:center;
+  font-size:2.4rem;
+  margin-bottom:60px;
+}
+
+.process-grid{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:30px;
+}
+
+.step{
+  background:#fff;
+  padding:30px;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.step span{
+  font-family:JetBrains Mono, monospace;
+  color:var(--accent);
+}
+
+/* ===== CONTATO ===== */
+.contact{
+  background:var(--bg-dark);
+  padding:120px 20px;
+  text-align:center;
+}
+
+.contact h2{
+  font-size:2.6rem;
+  margin-bottom:20px;
+}
+
+.contact p{
+  color:var(--muted);
+  margin-bottom:40px;
+}
+
+.contact a{
+  padding:16px 36px;
+  background:var(--accent);
+  color:#fff;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+/* ===== RESPONSIVO ===== */
+@media(max-width:900px){
+  .hero{padding:100px 30px}
+  .about-container{grid-template-columns:1fr;text-align:center}
+  .projects-grid,.process-grid{grid-template-columns:1fr}
+}
+</style>
 </head>
+
 <body>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <p class="badge">Desenvolvedor Web</p>
-      <h1>Sites modernos, rápidos<br>e focados em resultado</h1>
-      <p class="subtitle">
-        Crio sites profissionais para empresas e pessoas que querem
-        presença online séria, moderna e que gera clientes.
+<section class="hero">
+  <div class="hero-content">
+    <small>DESENVOLVEDOR WEB</small>
+    <h1>Sites modernos,<br>rápidos e focados em resultado</h1>
+    <p>
+      Crio sites profissionais para empresas e pessoas que
+      precisam de presença online séria, moderna e que gera clientes.
+    </p>
+    <div class="hero-buttons">
+      <a href="mailto:luizsennosnz@gmail.com" class="btn-primary">Solicitar orçamento</a>
+      <a href="#sobre" class="btn-outline">Quem sou</a>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="sobre">
+  <div class="about-container">
+    <img src="sua-foto.jpg" alt="Luiz Sennos">
+    <div>
+      <h2>Sobre mim</h2>
+      <p>
+        Desenvolvedor focado em criar sites rápidos, bem estruturados
+        e pensados para gerar resultado real.
       </p>
-
-      <a href="#contato" class="btn-primary">Solicitar orçamento</a>
+      <ul>
+        <li>✔ Design moderno e limpo</li>
+        <li>✔ Código organizado e performático</li>
+        <li>✔ Pensado para conversão</li>
+      </ul>
     </div>
+  </div>
+</section>
 
-    <div class="hero-image">
-      <img src="assets/profile.jpg" alt="Luiz Sennos">
+<section class="projects">
+  <h2>Projetos</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>Site Institucional</h3>
+      <p>Website profissional focado em conversão e credibilidade.</p>
     </div>
-  </section>
-
-  <!-- SOBRE -->
-  <section class="section light">
-    <h2>Sobre mim</h2>
-    <p>
-      Sou desenvolvedor web focado em criar sites limpos, rápidos e profissionais.
-      Trabalho com clientes que querem algo simples, bonito e que funcione.
-    </p>
-    <p>
-      Nada de site pesado ou confuso. Aqui é direto ao ponto.
-    </p>
-  </section>
-
-  <!-- SERVIÇOS -->
-  <section class="section dark">
-    <h2>O que eu faço</h2>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Sites Institucionais</h3>
-        <p>Sites modernos para empresas, profissionais e negócios locais.</p>
-      </div>
-
-      <div class="card">
-        <h3>Landing Pages</h3>
-        <p>Páginas focadas em conversão, ideais para anúncios.</p>
-      </div>
-
-      <div class="card">
-        <h3>Manutenção & Ajustes</h3>
-        <p>Correções, melhorias e evoluções no seu site atual.</p>
-      </div>
+    <div class="project-card">
+      <h3>Sistema Web</h3>
+      <p>Solução sob medida para organização e automação.</p>
     </div>
-  </section>
-
-  <!-- PROJETOS -->
-  <section class="section light">
-    <h2>Projetos</h2>
-
-    <div class="projects">
-      <div class="project">
-        <img src="assets/project-placeholder.png" alt="Projeto">
-        <h4>Site Institucional</h4>
-        <p>Layout moderno e responsivo.</p>
-      </div>
-
-      <div class="project">
-        <img src="assets/project-placeholder.png" alt="Projeto">
-        <h4>Landing Page</h4>
-        <p>Página focada em conversão.</p>
-      </div>
-
-      <div class="project">
-        <img src="assets/project-placeholder.png" alt="Projeto">
-        <h4>Vitrine Digital</h4>
-        <p>Apresentação profissional de serviços.</p>
-      </div>
+    <div class="project-card">
+      <h3>Landing Page</h3>
+      <p>Página otimizada para anúncios e geração de leads.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- CONTATO -->
-  <section class="section dark" id="contato">
-    <h2>Vamos conversar?</h2>
-    <p>
-      Me chama e eu te digo exatamente como podemos melhorar sua presença online.
-    </p>
+<section class="process">
+  <h2>Como funciona</h2>
+  <div class="process-grid">
+    <div class="step"><span>01</span><p>Entendimento do negócio</p></div>
+    <div class="step"><span>02</span><p>Design e estrutura</p></div>
+    <div class="step"><span>03</span><p>Desenvolvimento</p></div>
+    <div class="step"><span>04</span><p>Entrega e suporte</p></div>
+  </div>
+</section>
 
-    <a class="btn-outline" href="https://wa.me/5599999999999" target="_blank">
-      Falar no WhatsApp
-    </a>
-  </section>
-
-  <footer>
-    <p>© 2026 - Luiz Sennos</p>
-  </footer>
+<section class="contact">
+  <h2>Vamos conversar?</h2>
+  <p>Me conta sua ideia e eu te ajudo a transformar em um site profissional.</p>
+  <a href="mailto:luizsennosnz@gmail.com">Entrar em contato</a>
+</section>
 
 </body>
 </html>
