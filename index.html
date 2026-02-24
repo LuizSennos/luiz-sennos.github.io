@@ -5,8 +5,8 @@
   <title>Luiz Sennos | Sites Profissionais</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- FONTES -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Fonte tech / console -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
@@ -14,73 +14,104 @@
 
 <body>
 
+<header>
+  <div class="nav">
+    <strong>luizsennos.dev</strong>
+    <nav>
+      <a href="#sobre">sobre</a>
+      <a href="#servicos">serviços</a>
+      <a href="#portfolio">projetos</a>
+      <a href="#contato" class="cta">contato</a>
+    </nav>
+  </div>
+</header>
+
 <section class="hero">
   <div class="hero-content">
-    <small>DESENVOLVEDOR WEB</small>
-    <h1>Sites modernos,<br>rápidos e focados em resultado</h1>
-    <p>
-      Crio sites profissionais para empresas e pessoas que
-      precisam de presença online séria, moderna e que gera clientes.
+    <p class="top">$ echo "Olá, eu sou"</p>
+    <h1>Luiz <span>Sennos</span></h1>
+    <p class="desc">
+      Crio sites modernos, rápidos e profissionais para empresas
+      que querem presença online séria e resultados reais.
     </p>
-
     <div class="hero-buttons">
-      <a href="mailto:luizsennosnz@gmail.com" class="btn-primary">Solicitar orçamento</a>
-      <a href="#sobre" class="btn-outline">Quem sou</a>
+      <a href="#contato" class="btn-primary">quero um site</a>
+      <a href="#sobre" class="btn-outline">sobre mim</a>
     </div>
   </div>
 </section>
 
 <section class="about" id="sobre">
   <div class="about-container">
-    <img src="assets/img/foto.jpg" alt="Luiz Sennos">
     <div>
       <h2>Sobre mim</h2>
       <p>
-        Desenvolvedor focado em criar sites rápidos, bem estruturados
-        e pensados para gerar resultado real.
+        Desenvolvedor web focado em performance, clareza e conversão.
+        Trabalho do design ao código, sempre pensando no impacto
+        real para o negócio.
       </p>
       <ul>
-        <li>✔ Design moderno e limpo</li>
-        <li>✔ Código organizado e performático</li>
-        <li>✔ Pensado para conversão</li>
+        <li>✔ código limpo e performático</li>
+        <li>✔ visual moderno e confiável</li>
+        <li>✔ foco em resultado</li>
       </ul>
     </div>
   </div>
 </section>
 
-<section class="projects">
+<section class="services" id="servicos">
+  <div class="services-container">
+    <h2>Serviços</h2>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Sites Profissionais</h3>
+        <p>Sites rápidos, responsivos e focados em conversão.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Sistemas Sob Medida</h3>
+        <p>Soluções web simples ou completas para seu negócio.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Presença Digital</h3>
+        <p>Estrutura online para empresas venderem com confiança.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio" id="portfolio">
   <h2>Projetos</h2>
-  <div class="projects-grid">
-    <div class="project-card">
-      <h3>Site Institucional</h3>
-      <p>Website profissional focado em conversão e credibilidade.</p>
+
+  <div class="portfolio-grid">
+    <div class="project">
+      <h4>Projeto Institucional</h4>
+      <p>Site moderno para empresa de serviços.</p>
     </div>
-    <div class="project-card">
-      <h3>Sistema Web</h3>
-      <p>Solução sob medida para organização e automação.</p>
+
+    <div class="project">
+      <h4>Sistema Web</h4>
+      <p>Dashboard e automações internas.</p>
     </div>
-    <div class="project-card">
-      <h3>Landing Page</h3>
-      <p>Página otimizada para anúncios e geração de leads.</p>
+
+    <div class="project">
+      <h4>Landing Page</h4>
+      <p>Página focada em conversão.</p>
     </div>
   </div>
 </section>
 
-<section class="process">
-  <h2>Como funciona</h2>
-  <div class="process-grid">
-    <div class="step"><span>01</span><p>Entendimento do negócio</p></div>
-    <div class="step"><span>02</span><p>Design e estrutura</p></div>
-    <div class="step"><span>03</span><p>Desenvolvimento</p></div>
-    <div class="step"><span>04</span><p>Entrega e suporte</p></div>
-  </div>
-</section>
-
-<section class="contact">
+<section class="contact" id="contato">
   <h2>Vamos conversar?</h2>
-  <p>Me conta sua ideia e eu te ajudo a transformar em um site profissional.</p>
-  <a href="mailto:luizsennosnz@gmail.com">Entrar em contato</a>
+  <p>Me chama e a gente vê a melhor solução pro seu projeto.</p>
+  <a href="mailto:luizsennosnz@gmail.com">entrar em contato</a>
 </section>
+
+<footer>
+  <p>© 2026 — Luiz Sennos</p>
+</footer>
 
 </body>
 </html>
