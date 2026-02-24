@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+:root {
+  --bg-dark: #0f1115;
+  --bg-light: #f2f3f5;
+  --card-bg: #1a1d24;
+  --text-dark: #0f1115;
+  --text-light: #e6e6e6;
+  --accent: #7aa2f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background: var(--bg-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  gap: 60px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.badge {
+  color: var(--accent);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 16px;
+  opacity: 0.85;
+  margin-bottom: 32px;
+}
+
+.hero-image img {
+  width: 280px;
+  border-radius: 12px;
+  filter: grayscale(20%);
+}
+
+/* BOTÕES */
+.btn-primary {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--accent);
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* SEÇÕES */
+.section {
+  padding: 80px 10%;
+}
+
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+.section.light {
+  background: var(--bg-light);
+  color: var(--text-dark);
+}
+
+.section.dark {
+  background: var(--bg-dark);
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 24px;
+  border-radius: 10px;
+}
+
+/* PROJETOS */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.project {
+  background: #ffffff;
+  color: #000;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+/* FOOTER */
+footer {
+  padding: 24px;
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 220px;
+  }
+}
