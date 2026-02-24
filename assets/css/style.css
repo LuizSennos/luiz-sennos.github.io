@@ -7,6 +7,7 @@ body{
   color:#d1d5db;
 }
 
+/* HEADER */
 header{
   position:fixed;
   top:0;
@@ -42,6 +43,7 @@ header{
   border-radius:999px;
 }
 
+/* HERO */
 .hero{
   min-height:90vh;
   padding:140px 20px 80px;
@@ -49,6 +51,16 @@ header{
   background:
     radial-gradient(circle at 70% 20%, #22c55e33, transparent 40%),
     radial-gradient(circle at 20% 80%, #38bdf833, transparent 40%);
+}
+
+.hero-content{
+  max-width:760px;
+  margin:auto;
+}
+
+.hero p.top{
+  color:#22c55e;
+  font-size:.9rem;
 }
 
 .hero h1{
@@ -59,9 +71,9 @@ header{
 .hero h1 span{color:#22c55e}
 
 .hero p.desc{
-  max-width:720px;
   margin:20px auto;
   color:#9ca3af;
+  line-height:1.6;
 }
 
 .hero-buttons a{
@@ -82,6 +94,7 @@ header{
   color:#22c55e;
 }
 
+/* ABOUT */
 .about{
   background:#f1f5f9;
   color:#020617;
@@ -89,13 +102,18 @@ header{
 }
 
 .about-container{
-  max-width:1000px;
+  max-width:900px;
   margin:auto;
+}
+
+.about-container.center{
+  text-align:center;
 }
 
 .about ul{
   list-style:none;
   padding:0;
+  margin-top:30px;
 }
 
 .about li{
@@ -103,6 +121,7 @@ header{
   color:#16a34a;
 }
 
+/* PROJECTS */
 .projects{
   padding:120px 20px;
 }
@@ -110,6 +129,12 @@ header{
 .projects h2{
   text-align:center;
   font-weight:400;
+}
+
+.projects .subtitle{
+  text-align:center;
+  color:#9ca3af;
+  margin-top:10px;
 }
 
 .projects-grid{
@@ -120,6 +145,10 @@ header{
   gap:30px;
 }
 
+.projects-grid.center{
+  text-align:left;
+}
+
 .project-card{
   background:#020617;
   border:1px solid #1f2937;
@@ -127,33 +156,30 @@ header{
   border-radius:16px;
 }
 
-.project-card span{
-  display:block;
-  margin-top:10px;
-  font-size:.8rem;
-  color:#22c55e;
-}
-
-.scale{
+/* AUTHORITY */
+.authority{
   background:#0f172a;
   padding:140px 20px;
 }
 
-.scale-container{
-  max-width:1000px;
+.authority-container{
+  max-width:900px;
   margin:auto;
   text-align:center;
 }
 
-.scale-grid{
-  margin-top:50px;
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px;
-  font-size:.9rem;
+.authority p{
   color:#9ca3af;
+  line-height:1.7;
 }
 
+.authority-note{
+  margin-top:20px;
+  font-size:.85rem;
+  color:#6b7280;
+}
+
+/* CONTACT */
 .contact{
   padding:120px 20px;
   text-align:center;
@@ -170,6 +196,7 @@ header{
   text-decoration:none;
 }
 
+/* FOOTER */
 footer{
   padding:30px;
   text-align:center;
@@ -178,10 +205,11 @@ footer{
 }
 
 @media(max-width:900px){
-  .projects-grid,
-  .scale-grid{
+  .projects-grid{
     grid-template-columns:1fr;
   }
 
-  .hero h1{font-size:2.2rem}
+  .hero h1{
+    font-size:2.2rem;
+  }
 }
