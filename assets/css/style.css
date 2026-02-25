@@ -195,7 +195,7 @@ header {
   background: #ffffff;
   padding: 32px;
   border-radius: 18px;
-  color: #020617; /* texto dos cards */
+  color: #020617; /* texto dentro dos cards */
 }
 
 /* título e descrição da seção */
@@ -207,6 +207,12 @@ header {
 .portfolio p {
   color: #1f2937;   /* cinza escuro */
   font-size: 1.1rem;
+}
+
+/* subtítulos dos cards */
+.portfolio .project h3 {
+  color: #111827;   /* cinza bem escuro */
+  font-weight: 600;
 }
 
 /* CONTACT */
