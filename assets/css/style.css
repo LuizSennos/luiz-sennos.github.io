@@ -153,7 +153,6 @@ header {
   width: 100%;
   max-width: 260px;
   border-radius: 18px;
-  
 }
 
 /* SERVICES */
@@ -196,24 +195,19 @@ header {
   background: #ffffff;
   padding: 32px;
   border-radius: 18px;
-  color: #020617; /* cor do texto dentro dos cards */
+  color: #020617; /* texto dos cards */
 }
 
-/* título da seção */
+/* título e descrição da seção */
 .portfolio h2 {
   color: #020617;   /* preto escuro */
-  font-weight: 600; /* mais forte */
+  font-weight: 600;
 }
 
-/* texto logo abaixo do título */
 .portfolio p {
   color: #1f2937;   /* cinza escuro */
-  font-size: 1.1rem; /* opcional: aumenta legibilidade */
+  font-size: 1.1rem;
 }
-
-
-
-
 
 /* CONTACT */
 .contact {
@@ -270,6 +264,7 @@ header {
   }
 }
 
+/* logos dos projetos */
 .project-logo {
   display: block;
   margin: 0 auto 16px;
@@ -284,20 +279,7 @@ header {
   transform: scale(1.05);
 }
 
-.project-logo {
-  display: block;
-  margin: 0 auto 16px;
-  max-width: 120px;
-  height: auto;
-  filter: grayscale(100%);
-  transition: filter 0.3s ease, transform 0.3s ease;
-}
-
-.project-logo:hover {
-  filter: grayscale(0%);
-  transform: scale(1.05);
-}
-
+/* botão whatsapp */
 .whatsapp-btn {
   display: inline-flex;
   align-items: center;
@@ -320,6 +302,3 @@ header {
   width: 22px;
   height: 22px;
 }
-
-
-
