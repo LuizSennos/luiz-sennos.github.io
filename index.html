@@ -1,69 +1,116 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LuizSennos.dev</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+<meta charset="UTF-8">
+<title>Luiz Sennos | Sites Profissionais</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<header class="header">
-  <div class="logo">luizsennos.dev</div>
-  <nav class="nav">
-    <a href="#inicio">Início</a>
-    <a href="#perfil">Perfil</a>
-    <a href="#projetos">Projetos</a>
-    <a href="#contato">Contato</a>
-  </nav>
-  <div class="menu-toggle">&#9776;</div>
+<header>
+  <div class="nav">
+    <div class="brand">
+      <strong>luizsennos.dev</strong>
+      <button class="menu-toggle">☰</button>
+    </div>
+    <nav id="menu">
+      <a href="#sobre">sobre</a>
+      <a href="#servicos">serviços</a>
+      <a href="#portfolio">projetos</a>
+      <a href="#contato" class="cta">contato</a>
+    </nav>
+  </div>
 </header>
 
-<section id="inicio" class="hero">
-  <p class="terminal">$ echo "Olá, eu sou"</p>
-  <h1>Luiz Sennos</h1>
-  <p class="subtitle">
-    Desenvolvo sites e sistemas profissionais para empresas que precisam
-    transmitir credibilidade, organizar processos e vender mais com tecnologia.
-  </p>
-  <a href="#perfil" class="btn">Entrar no site</a>
-</section>
-
-<section id="perfil" class="section">
-  <h2>Perfil Técnico</h2>
-  <p>
-    Desenvolvimento de sistemas corporativos, automações, plataformas web
-    e soluções digitais focadas em resultado.
-  </p>
-</section>
-
-<section id="projetos" class="section">
-  <h2>Projetos em Destaque</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>Sistema Financeiro</h3>
-      <p>Gestão financeira, relatórios e integrações.</p>
-    </div>
-    <div class="card">
-      <h3>Automação Empresarial</h3>
-      <p>Processos automáticos e redução de erros.</p>
-    </div>
-    <div class="card">
-      <h3>Plataforma Interna</h3>
-      <p>Usuários, permissões e fluxos internos.</p>
+<section class="hero">
+  <div class="hero-content">
+    <p class="top">$ echo "Olá, eu sou"</p>
+    <h1>Luiz <span>Sennos</span></h1>
+    <p class="desc">
+      Desenvolvo sites e sistemas profissionais para empresas que precisam
+      transmitir credibilidade, organizar processos e vender mais com tecnologia.
+    </p>
+    <div class="hero-buttons">
+      <a href="#contato" class="btn-primary">falar comigo</a>
+      <a href="#sobre" class="btn-outline">sobre mim</a>
     </div>
   </div>
 </section>
 
-<section id="contato" class="section">
-  <h2>Contato</h2>
-  <p>Vamos conversar sobre seu projeto.</p>
+<section class="about" id="sobre">
+  <div class="about-container">
+    <div class="about-photo">
+      <img src="sua-foto.jpg" alt="Luiz Sennos">
+    </div>
+    <div>
+      <h2>Sobre mim</h2>
+      <p>
+        Atuo no desenvolvimento de soluções digitais robustas, unindo design,
+        performance e automação para empresas de médio e grande porte.
+      </p>
+      <ul>
+        <li>✔ mais de 80 projetos entregues</li>
+        <li>✔ automações, sistemas e web</li>
+        <li>✔ foco em resultado e escala</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="servicos">
+  <div class="services-container">
+    <h2>Serviços</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Sites Profissionais</h3>
+        <p>Sites rápidos, modernos e focados em conversão.</p>
+      </div>
+      <div class="service-card">
+        <h3>Sistemas Sob Medida</h3>
+        <p>Soluções personalizadas para processos internos.</p>
+      </div>
+      <div class="service-card">
+        <h3>Automação & Integrações</h3>
+        <p>RPA, APIs e integrações corporativas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio" id="portfolio">
+  <h2>Projetos em destaque</h2>
+  <div class="portfolio-grid">
+    <div class="project">
+      <h3>Sistema Financeiro Corporativo</h3>
+      <p>Automação de contas, relatórios e integrações bancárias.</p>
+    </div>
+    <div class="project">
+      <h3>Automação Empresarial</h3>
+      <p>Robôs para SAP, ServiceNow e sistemas internos.</p>
+    </div>
+    <div class="project">
+      <h3>Plataforma Interna</h3>
+      <p>Gestão de usuários, permissões e fluxos.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contato">
+  <h2>Vamos conversar?</h2>
+  <a href="mailto:luizsennosnz@gmail.com">entrar em contato</a>
 </section>
 
 <script>
-  const toggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.nav');
-  toggle.onclick = () => nav.classList.toggle('active');
+const toggle = document.querySelector('.menu-toggle');
+const menu = document.getElementById('menu');
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('open');
+});
 </script>
 
 </body>
