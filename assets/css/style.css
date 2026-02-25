@@ -199,6 +199,8 @@ header {
   color: #020617;
 }
 
+.portfolio .project h3 { color: #1f2937; /* cinza bem escuro */ }
+
 /* CONTACT */
 .contact {
   background: #020617;
