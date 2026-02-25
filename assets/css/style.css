@@ -6,35 +6,31 @@
 
 body {
   font-family: 'Segoe UI', monospace;
-  background: #111;
-  color: #e5e5e5;
-  line-height: 1.6;
+  background: #0f0f0f;
+  color: #e6e6e6;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 24px;
-  background: #1a1a1a;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  padding: 18px 28px;
+  background: #121212;
 }
 
 .logo {
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: 1px;
 }
 
 .nav {
   display: flex;
-  gap: 20px;
+  gap: 24px;
 }
 
 .nav a {
+  color: #e6e6e6;
   text-decoration: none;
-  color: #e5e5e5;
   font-size: 14px;
 }
 
@@ -46,68 +42,66 @@ body {
 
 .hero {
   min-height: 90vh;
-  padding: 80px 24px;
+  padding: 100px 24px;
   text-align: center;
-  background: linear-gradient(180deg, #181818, #0f0f0f);
+  background: linear-gradient(180deg, #151515, #0f0f0f);
 }
 
 .terminal {
-  color: #00ff9c;
   font-family: monospace;
-  margin-bottom: 10px;
+  color: #00ff9c;
+  margin-bottom: 12px;
 }
 
 .hero h1 {
-  font-size: 48px;
-  margin-bottom: 16px;
+  font-size: 52px;
+  margin-bottom: 18px;
 }
 
 .subtitle {
-  max-width: 700px;
-  margin: 0 auto 32px;
-  color: #bfbfbf;
+  max-width: 720px;
+  margin: 0 auto 36px;
+  color: #bdbdbd;
 }
 
 .btn {
-  display: inline-block;
-  padding: 12px 28px;
+  padding: 14px 32px;
   border: 1px solid #00ff9c;
   color: #00ff9c;
   text-decoration: none;
   border-radius: 4px;
-  font-weight: 500;
 }
 
 .section {
-  padding: 80px 24px;
+  padding: 90px 24px;
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
 }
 
 .section h2 {
-  font-size: 32px;
-  margin-bottom: 24px;
+  font-size: 34px;
+  margin-bottom: 26px;
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-top: 40px;
+  gap: 26px;
+  margin-top: 44px;
 }
 
 .card {
-  background: #1b1b1b;
-  padding: 28px;
+  background: #171717;
+  padding: 30px;
   border-radius: 6px;
   text-align: left;
 }
 
 .card h3 {
-  color: #00ff9c;
-  margin-bottom: 12px;
   font-family: monospace;
+  color: #00ff9c;
+  margin-bottom: 14px;
 }
 
 .card p {
@@ -121,15 +115,15 @@ body {
 }
 
 @media (max-width: 768px) {
-  body {
-    background: #1a1a1a;
+  .menu-toggle {
+    display: block;
   }
 
   .nav {
     position: absolute;
-    top: 60px;
+    top: 64px;
     right: 0;
-    background: #222;
+    background: #121212;
     flex-direction: column;
     width: 200px;
     display: none;
@@ -139,23 +133,7 @@ body {
     display: flex;
   }
 
-  .menu-toggle {
-    display: block;
-  }
-
-  .hero {
-    background: #202020;
-  }
-
   .hero h1 {
-    font-size: 36px;
-  }
-
-  .subtitle {
-    color: #dddddd;
-  }
-
-  .card {
-    background: #242424;
+    font-size: 38px;
   }
 }
