@@ -1,138 +1,84 @@
-<!-- portfolio.html -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Luiz Sennos | Portfólio Completo</title>
+<title>Projetos em Destaque | Luiz Sennos</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./assets/css/style.css">
-<link rel="stylesheet" href="./assets/css/portfolio.css">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
 <header>
   <div class="nav">
-    <strong>luizsennos.dev</strong>
-    <nav>
-      <a href="index.html">home</a>
-      <a href="#portfolio">portfólio</a>
-      <a href="index.html#contato" class="cta">contato</a>
+    <div class="brand">
+      <strong>luizsennos.dev</strong>
+      <button class="menu-toggle">☰</button>
+    </div>
+
+    <nav id="menu">
+      <a href="index.html#sobre">sobre</a>
+      <a href="index.html#servicos">serviços</a>
+      <a href="portfolio.html" class="cta">projetos</a>
+      <a href="index.html#contato">contato</a>
     </nav>
   </div>
 </header>
 
-<section class="portfolio-hero">
-  <h1>Portfólio Técnico</h1>
-  <p>
-    Visão consolidada de projetos corporativos,
-    automações, sistemas e soluções digitais
-    desenvolvidas ao longo da carreira.
-  </p>
-</section>
-
-<section class="portfolio-stats">
-  <div class="stat">
-    <strong>+80</strong>
-    <span>Projetos entregues</span>
-  </div>
-  <div class="stat">
-    <strong>+12</strong>
-    <span>Empresas de grande porte</span>
-  </div>
-  <div class="stat">
-    <strong>10+</strong>
-    <span>Anos em tecnologia</span>
-  </div>
-</section>
-
-<section class="portfolio-section" id="portfolio">
-  <h2>Áreas de Atuação</h2>
+<section class="portfolio" style="padding-top:120px;">
+  <h2>Projetos em destaque</h2>
+  <p>Algumas das soluções que desenvolvi para grandes empresas, com foco em automação, sistemas web e integração corporativa.</p>
 
   <div class="portfolio-grid">
-    <div class="portfolio-card">
-      <h3>Automação RPA & Processos</h3>
-      <p>
-        Robôs para SAP, ServiceNow, sistemas legados,
-        impressão em larga escala, rotinas financeiras,
-        RH e operações críticas.
-      </p>
+    <div class="project">
+      <h3>Robô de Impressão de Notas</h3>
+      <p>Automação que imprime mais de 50.000 notas fiscais na Riachuelo, garantindo agilidade e precisão.</p>
     </div>
-
-    <div class="portfolio-card">
-      <h3>Sistemas Financeiros</h3>
-      <p>
-        Controle financeiro, conciliações,
-        integrações bancárias, Open Finance,
-        relatórios gerenciais e dashboards.
-      </p>
+    <div class="project">
+      <h3>Integração RH via API</h3>
+      <p>Robô que recebe dados de APIs e registra automaticamente no sistema de RH da empresa.</p>
     </div>
-
-    <div class="portfolio-card">
-      <h3>Sistemas Corporativos</h3>
-      <p>
-        Plataformas internas, controle de usuários,
-        permissões, workflows, auditoria e governança.
-      </p>
+    <div class="project">
+      <h3>Gestão de Tickets</h3>
+      <p>Automação que abre e gerencia chamados de equipamentos via API, reduzindo tempo de resposta.</p>
     </div>
-
-    <div class="portfolio-card">
-      <h3>RH & Operações</h3>
-      <p>
-        Onboarding automatizado, gestão documental,
-        controle de equipamentos, ponto e processos internos.
-      </p>
+    <div class="project">
+      <h3>Robôs Financeiros</h3>
+      <p>Consolidação financeira, ajustes contábeis e mensageria integrada em SAP para empresas como Icatu Seguros.</p>
     </div>
-
-    <div class="portfolio-card">
-      <h3>Web & Plataformas</h3>
-      <p>
-        Sites institucionais, sistemas web,
-        painéis administrativos e aplicações sob medida.
-      </p>
+    <div class="project">
+      <h3>Controle Químico SAP</h3>
+      <p>Robô que calcula e ajusta dados químicos da Riachuelo diretamente via SAP.</p>
     </div>
-
-    <div class="portfolio-card">
-      <h3>Integrações & APIs</h3>
-      <p>
-        Integração entre sistemas, ERPs,
-        APIs públicas e privadas,
-        automação ponta a ponta.
-      </p>
+    <div class="project">
+      <h3>Intranet Corporativa</h3>
+      <p>Sistema web interno para gestão de processos e comunicação em companhias de grande porte.</p>
+    </div>
+    <div class="project">
+      <h3>Gestão Financeira Open Finance</h3>
+      <p>Sistema web de controle financeiro integrado com Open Finance, trazendo transparência e automação.</p>
+    </div>
+    <div class="project">
+      <h3>Scripts de Automação</h3>
+      <p>Automatização de rotinas internas para clientes como Danone, Siemens Healthineers e Riachuelo.</p>
     </div>
   </div>
 </section>
 
-<section class="portfolio-credibility">
-  <h2>Experiência Corporativa</h2>
-  <p>
-    Atuação em projetos estratégicos para grandes empresas,
-    ambientes críticos e operações de alto volume,
-    sempre com foco em estabilidade, segurança e resultado.
-  </p>
-
-  <ul>
-    <li>✔ automações em escala corporativa</li>
-    <li>✔ sistemas financeiros e operacionais</li>
-    <li>✔ ambientes regulados e críticos</li>
-    <li>✔ soluções sob medida para negócio</li>
-  </ul>
+<section class="contact" id="contato">
+  <h2>Vamos conversar?</h2>
+  <a href="mailto:luizsennosnz@gmail.com">entrar em contato</a>
 </section>
 
-<section class="contact">
-  <h2>Projeto confidencial?</h2>
-  <p>
-    Detalhes técnicos completos são apresentados
-    em conversa direta.
-  </p>
-  <a href="mailto:luizsennosnz@gmail.com">falar comigo</a>
-</section>
-
-<footer>
-  <p>© 2026 Luiz Sennos</p>
-</footer>
+<script>
+const toggle = document.querySelector('.menu-toggle');
+const menu = document.getElementById('menu');
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('open');
+});
+</script>
 
 </body>
 </html>
