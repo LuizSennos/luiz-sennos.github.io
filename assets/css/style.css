@@ -199,6 +199,16 @@ header {
   color: #e6eaf0;
 }
 
+.portfolio h2 {
+  color: #020617; /* preto escuro */
+  font-weight: 600;
+}
+
+.portfolio p {
+  color: #1f2937; /* cinza escuro para descrição */
+}
+
+
 
 
 /* CONTACT */
