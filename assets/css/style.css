@@ -72,10 +72,15 @@ header {
 /* HERO */
 .hero {
   min-height: 90vh;
-  padding: 110px 20px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* joga o conteúdo para baixo */
+  align-items: center;
   text-align: center;
   position: relative;
+  padding: 40px 20px; /* controla a distância da borda inferior */
 }
+
 
 .hero::before {
   content: "";
@@ -90,8 +95,8 @@ header {
   max-width: 720px;
   margin: auto;
   position: relative;
-  padding-top: 20px;
 }
+
 
 .hero .top {
   color: #22c55e;
