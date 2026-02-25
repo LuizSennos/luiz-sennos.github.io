@@ -282,4 +282,28 @@ header {
   transform: scale(1.05);
 }
 
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #25D366; /* verde oficial do WhatsApp */
+  color: #020617;
+  padding: 14px 34px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+  transform: scale(1.05);
+}
+
+.whatsapp-icon {
+  width: 22px;
+  height: 22px;
+}
+
+
 
