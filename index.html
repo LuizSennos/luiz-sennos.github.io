@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<title>Luiz Sennos | Sites Profissionais</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <title>Luiz Sennos | Sites Profissionais</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -21,7 +20,7 @@
     <nav id="menu">
       <a href="#sobre">sobre</a>
       <a href="#servicos">serviços</a>
-      <a href="#portfolio">projetos</a>
+      <a href="portfolio.html">projetos</a>
       <a href="#contato" class="cta">contato</a>
     </nav>
   </div>
@@ -37,7 +36,7 @@
     </p>
     <div class="hero-buttons">
       <a href="#contato" class="btn-primary">falar comigo</a>
-      <a href="#sobre" class="btn-outline">sobre mim</a>
+      <a href="portfolio.html" class="btn-outline">ver projetos</a>
     </div>
   </div>
 </section>
@@ -45,7 +44,7 @@
 <section class="about" id="sobre">
   <div class="about-container">
     <div class="about-photo">
-      <img src="sua-foto.jpg" alt="Luiz Sennos">
+      <img src="assets/img/foto.jpg" alt="Luiz Sennos">
     </div>
     <div>
       <h2>Sobre mim</h2>
@@ -53,10 +52,10 @@
         Atuo no desenvolvimento de soluções digitais robustas, unindo design,
         performance e automação para empresas de médio e grande porte.
       </p>
-      <ul>
-        <li>✔ mais de 80 projetos entregues</li>
-        <li>✔ automações, sistemas e web</li>
-        <li>✔ foco em resultado e escala</li>
+      <ul style="list-style: none; margin-top: 20px;">
+        <li><span style="color: #22c55e;">✔</span> mais de 80 projetos entregues</li>
+        <li><span style="color: #22c55e;">✔</span> automações, sistemas e web</li>
+        <li><span style="color: #22c55e;">✔</span> foco em resultado e escala</li>
       </ul>
     </div>
   </div>
@@ -66,41 +65,51 @@
   <h2>Serviços</h2>
   <div class="services-grid">
     <div class="service-card">
-      <h3>Sites Profissionais</h3>
+      <h3 style="color: #22c55e;">Sites Profissionais</h3>
       <p>Sites rápidos, modernos e focados em conversão.</p>
     </div>
     <div class="service-card">
-      <h3>Sistemas Sob Medida</h3>
+      <h3 style="color: #22c55e;">Sistemas Sob Medida</h3>
       <p>Soluções personalizadas para processos internos.</p>
     </div>
     <div class="service-card">
-      <h3>Automação & Integrações</h3>
+      <h3 style="color: #22c55e;">Automação & Integrações</h3>
       <p>RPA, APIs e integrações corporativas.</p>
     </div>
   </div>
 </section>
 
 <section class="portfolio" id="portfolio">
-  <h2>Projetos em destaque</h2>
+  <h2 style="color: #020617;">Alguns Clientes</h2>
+  <p style="color: #4b5563; margin-bottom: 40px;">Soluções de alto impacto para grandes marcas.</p>
+  
   <div class="portfolio-grid">
     <div class="project">
-      <h3>Sistema Financeiro Corporativo</h3>
-      <p>Automação de contas, relatórios e integrações bancárias.</p>
+      <h3>Riachuelo</h3>
+      <p>Automação de impressão de 50k+ notas fiscais.</p>
     </div>
     <div class="project">
-      <h3>Automação Empresarial</h3>
-      <p>Robôs para SAP, ServiceNow e sistemas internos.</p>
+      <h3>Siemens</h3>
+      <p>Integração de APIs para sistemas de RH.</p>
     </div>
     <div class="project">
-      <h3>Plataforma Interna</h3>
-      <p>Gestão de usuários, permissões e fluxos.</p>
+      <h3>Icatu Seguros</h3>
+      <p>Robôs financeiros e ajustes em SAP.</p>
     </div>
+  </div>
+  
+  <div style="margin-top: 50px;">
+    <a href="portfolio.html" style="color: #020617; font-weight: 500; text-decoration: underline;">Ver todos os 30+ projetos →</a>
   </div>
 </section>
 
 <section class="contact" id="contato">
-  <h2>Vamos conversar?</h2>
-  <a href="mailto:luizsennosnz@gmail.com">entrar em contato</a>
+  <h2 style="color: #fff;">Vamos conversar?</h2>
+  <p style="color: #9ca3af; margin-bottom: 30px;">Pronto para levar seu projeto para o próximo nível?</p>
+  <a href="https://wa.me/5521969409771" target="_blank" class="whatsapp-btn">
+    <img src="assets/img/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+    falar pelo WhatsApp
+  </a>
 </section>
 
 <script>
@@ -108,6 +117,13 @@ const toggle = document.querySelector('.menu-toggle');
 const menu = document.getElementById('menu');
 toggle.addEventListener('click', () => {
   menu.classList.toggle('open');
+});
+
+// Fecha o menu ao clicar em um link (Mobile)
+document.querySelectorAll('#menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        menu.classList.remove('open');
+    });
 });
 </script>
 
