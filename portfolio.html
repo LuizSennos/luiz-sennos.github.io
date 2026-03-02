@@ -1,91 +1,104 @@
-<section id="sobre" class="portfolio-section">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Projetos | Luiz Sennos</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <h2>Projetos em Destaque</h2>
-    <p class="portfolio-hero p" style="margin-bottom: 40px; color: #64748b;">
-        Principais projetos corporativos desenvolvidos.
-    </p>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 
-    <div class="portfolio-grid">
+<style>
+.portfolio h2 {
+  color: #020617;
+  font-weight: 600;
+}
 
-        <div class="portfolio-card">
-            <h3>Robô Fiscal SAP – Riachuelo</h3>
-            <p>
-                Impressão e controle automatizado de mais de 
-                50.000 notas fiscais integradas ao SAP.
-            </p>
-        </div>
+.portfolio p {
+  color: #1f2937;
+  font-size: 1.1rem;
+}
+</style>
+</head>
 
-        <div class="portfolio-card">
-            <h3>Sistema de Invoices – Siemens Healthineers</h3>
-            <p>
-                Validação, registro automático e integração 
-                de invoices via API corporativa.
-            </p>
-        </div>
+<body>
 
-        <div class="portfolio-card">
-            <h3>Robôs Financeiros – Icatu Seguros</h3>
-            <p>
-                Consolidação contábil e automações financeiras 
-                integradas ao SAP.
-            </p>
-        </div>
-
-        <div class="portfolio-card">
-            <h3>Gestão de RH – Danone</h3>
-            <p>
-                Sistema interno para controle de admissões, 
-                desligamentos e fluxos de aprovação.
-            </p>
-        </div>
-
+<header>
+  <div class="nav">
+    <div class="brand">
+      <strong>luizsennos.dev</strong>
+      <button class="menu-toggle">☰</button>
     </div>
 
-    <div class="lista-projetos">
+    <nav id="menu">
+      <a href="index.html#sobre">sobre</a>
+      <a href="index.html#servicos">serviços</a>
+      <a href="portfolio.html" class="cta">projetos</a>
+      <a href="index.html#contato">contato</a>
+    </nav>
+  </div>
+</header>
 
-        <h3>Outros Projetos Corporativos</h3>
+<section class="portfolio" style="padding-top:120px;">
+  <h2>Projetos em destaque</h2>
+  <p>Algumas das soluções que desenvolvi para grandes empresas, com foco em automação, sistemas web e integração corporativa.</p>
 
-        <ul>
-            <li>
-                <strong>Automação de Conciliação Bancária</strong>
-                <span>Cliente: Banco BV – Robô para cruzamento automático de extratos e relatórios.</span>
-            </li>
+  <div class="portfolio-grid">
 
-            <li>
-                <strong>Portal Financeiro Open Finance</strong>
-                <span>Cliente: Stone – Sistema web para consolidação de contas e dashboards.</span>
-            </li>
-
-            <li>
-                <strong>Robô de Cálculo de Produtos Químicos</strong>
-                <span>Cliente: Riachuelo – Automação responsável por cálculos técnicos industriais.</span>
-            </li>
-
-            <li>
-                <strong>Sistema de Workflow Financeiro</strong>
-                <span>Cliente: Icatu Seguros – Plataforma para controle de aprovações e integração SAP.</span>
-            </li>
-
-            <li>
-                <strong>Intranet Corporativa</strong>
-                <span>Cliente: Danone – Portal institucional interno com gestão documental.</span>
-            </li>
-
-            <li>
-                <strong>Automação de Faturamento</strong>
-                <span>Cliente: Siemens Healthineers – Robô para leitura de PDFs e lançamento de invoices.</span>
-            </li>
-            
-            <li>
-                <strong>Dashboard Executivo de Indicadores</strong>
-                <span>Cliente: Stone – Sistema para visualização de KPIs financeiros e operacionais.</span>
-            </li>
-
-            <li>
-                <strong>Robô de Processamento de NF-e</strong>
-                <span>Cliente: Riachuelo – Extração automática e envio de dados fiscais.</span>
-            </li>
-        </ul>
+    <div class="project">
+      <img src="assets/img/riachuelo.png" alt="Riachuelo" class="project-logo">
+      <h3>Robô de Impressão de Notas</h3>
+      <p>Automação que imprime mais de 50.000 notas fiscais.</p>
     </div>
 
+    <div class="project">
+      <img src="assets/img/siemens.webp" alt="Siemens Healthineers" class="project-logo">
+      <h3>Integração RH via API</h3>
+      <p>Robô que recebe dados de APIs e registra automaticamente no sistema de RH.</p>
+    </div>
+
+    <div class="project">
+      <img src="assets/img/icatu.png" alt="Icatu Seguros" class="project-logo">
+      <h3>Robôs Financeiros</h3>
+      <p>Consolidação financeira e ajustes contábeis em SAP.</p>
+    </div>
+
+    <div class="project">
+      <img src="assets/img/danone.png" alt="Danone" class="project-logo">
+      <h3>Scripts de Automação</h3>
+      <p>Automatização de rotinas internas corporativas.</p>
+    </div>
+
+    <div class="project">
+      <img src="assets/img/openfinance.png" alt="Open Finance" class="project-logo">
+      <h3>Controle Financeiro Integrado</h3>
+      <p>Site com integração Open Finance trazendo transparência e automação.</p>
+    </div>
+
+    <div class="project">
+      <img src="assets/img/apps.png" alt="Apps & Web" class="project-logo">
+      <h3>Sistemas Web & Apps</h3>
+      <p>Desenvolvimento completo de sistemas web, aplicativos e automações.</p>
+    </div>
+
+  </div>
 </section>
+
+<section class="contact">
+  <h2>Vamos conversar?</h2>
+  <a href="https://wa.me/5521969409771" target="_blank" class="whatsapp-btn">
+    <img src="assets/img/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+    falar pelo WhatsApp
+  </a>
+</section>
+
+<script>
+const toggle = document.querySelector('.menu-toggle');
+const menu = document.getElementById('menu');
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('open');
+});
+</script>
+
+</body>
+</html>
