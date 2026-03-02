@@ -6,7 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* Mantendo seus estilos específicos da página de portfólio */
+        .portfolio h2 { color: #020617; font-weight: 600; }
+        .portfolio p { color: #1f2937; font-size: 1.1rem; }
+        .project-logo { max-width: 120px; margin-bottom: 15px; display: block; }
+        
+        /* Ajuste para a lista de 30 itens não quebrar seu layout antigo */
+        .lista-projetos-container { margin-top: 80px; padding: 40px 20px; background: #f8fafc; border-radius: 20px; }
+        .lista-projetos-container h3 { text-align: center; margin-bottom: 40px; font-size: 1.8rem; }
+    </style>
 </head>
+
 <body>
 
 <header>
@@ -24,82 +36,101 @@
     </div>
 </header>
 
-<section class="portfolio-hero">
-    <h1>Projetos Desenvolvidos</h1>
-    <p>Automação, sistemas web e integrações corporativas de alto impacto.</p>
-</section>
-
-<section class="portfolio-section" id="projetos">
-    <h2>Projetos em Destaque</h2>
-    <p style="color: #64748b; margin-bottom: 40px; text-align: center;">Principais soluções arquitetadas para grandes players do mercado.</p>
+<section class="portfolio" style="padding-top:120px; max-width: 1200px; margin: 0 auto;">
+    <h2>Projetos em destaque</h2>
+    <p>Algumas das soluções que desenvolvi para grandes empresas, com foco em automação, sistemas web e integração corporativa.</p>
 
     <div class="portfolio-grid">
-        <div class="portfolio-card">
-            <h3>Robô Fiscal SAP – Riachuelo</h3>
-            <p>Impressão e controle automatizado de mais de 50.000 notas fiscais integradas ao SAP.</p>
+
+        <div class="project">
+            <img src="assets/img/riachuelo.png" alt="Riachuelo" class="project-logo">
+            <h3>Robô de Impressão de Notas</h3>
+            <p>Automação que imprime mais de 50.000 notas fiscais.</p>
         </div>
-        <div class="portfolio-card">
-            <h3>Sistema de Invoices – Siemens</h3>
-            <p>Validação, registro automático e integração de invoices via API corporativa.</p>
+
+        <div class="project">
+            <img src="assets/img/siemens.webp" alt="Siemens Healthineers" class="project-logo">
+            <h3>Integração RH via API</h3>
+            <p>Robô que recebe dados de APIs e registra automaticamente no sistema de RH.</p>
         </div>
-        <div class="portfolio-card">
-            <h3>Robôs Financeiros – Icatu Seguros</h3>
-            <p>Consolidação contábil e automações financeiras integradas ao SAP.</p>
+
+        <div class="project">
+            <img src="assets/img/icatu.png" alt="Icatu Seguros" class="project-logo">
+            <h3>Robôs Financeiros</h3>
+            <p>Consolidação financeira e ajustes contábeis em SAP.</p>
         </div>
-        <div class="portfolio-card">
-            <h3>Gestão de RH – Danone</h3>
-            <p>Sistema interno para controle de admissões, desligamentos e fluxos de aprovação.</p>
+
+        <div class="project">
+            <img src="assets/img/danone.png" alt="Danone" class="project-logo">
+            <h3>Scripts de Automação</h3>
+            <p>Automatização de rotinas internas corporativas.</p>
         </div>
+
+        <div class="project">
+            <img src="assets/img/openfinance.png" alt="Open Finance" class="project-logo">
+            <h3>Controle Financeiro Integrado</h3>
+            <p>Site com integração Open Finance trazendo transparência e automação.</p>
+        </div>
+
+        <div class="project">
+            <img src="assets/img/apps.png" alt="Apps & Web" class="project-logo">
+            <h3>Sistemas Web & Apps</h3>
+            <p>Desenvolvimento completo de sistemas web, aplicativos e automações.</p>
+        </div>
+
     </div>
 
     <div class="lista-projetos">
         <h3>Outros Projetos Corporativos</h3>
         <ul>
-            <li><strong>Automação de Conciliação Bancária (Banco BV)</strong> <span>Robô para cruzamento automático de extratos e geração de relatórios financeiros.</span></li>
-            <li><strong>Portal Financeiro Open Finance (Stone)</strong> <span>Sistema web para consolidação de contas, fluxo de caixa e dashboards.</span></li>
-            <li><strong>Robô de Cálculo Químico (Riachuelo)</strong> <span>Automação responsável por cálculos técnicos e validação industrial.</span></li>
-            <li><strong>Sistema de Workflow Financeiro (Icatu Seguros)</strong> <span>Plataforma para controle de aprovações contábeis e integração SAP.</span></li>
-            <li><strong>Intranet Corporativa (Danone)</strong> <span>Portal institucional interno com mensageria e gestão documental.</span></li>
-            <li><strong>Automação de Faturamento (Siemens Healthineers)</strong> <span>Robô para leitura de PDFs e lançamento automático de invoices.</span></li>
-            <li><strong>Dashboard Executivo (Stone)</strong> <span>Sistema para visualização de KPIs financeiros e operacionais.</span></li>
-            <li><strong>Robô de Processamento de NF-e (Riachuelo)</strong> <span>Extração automática, armazenamento e envio de dados fiscais.</span></li>
-            <li><strong>Gestão de Contratos (Banco BV)</strong> <span>Plataforma interna para controle de contratos e integrações bancárias.</span></li>
-            <li><strong>Automação de Fluxo de Caixa (Icatu Seguros)</strong> <span>Consolidação automática de lançamentos contábeis.</span></li>
-            <li><strong>Robô de Integração SAP (Danone)</strong> <span>Automação de rotinas administrativas com gravação de dados no SAP.</span></li>
-            <li><strong>Controle de Acessos (Siemens Healthineers)</strong> <span>Gestão de permissões e autenticação corporativa.</span></li>
-            <li><strong>Mensageria Interna (Stone)</strong> <span>Sistema interno para comunicação entre departamentos.</span></li>
-            <li><strong>Relatórios Gerenciais (Banco BV)</strong> <span>Geração automática de relatórios financeiros em PDF.</span></li>
-            <li><strong>Robô de Cadastro em Massa (Riachuelo)</strong> <span>Inclusão automatizada de registros via integração API.</span></li>
-            <li><strong>Aprovação de Despesas (Danone)</strong> <span>Plataforma interna para validação e controle de reembolsos.</span></li>
-            <li><strong>Monitoramento Financeiro (Icatu Seguros)</strong> <span>Auditoria automática de inconsistências contábeis.</span></li>
-            <li><strong>Integração ERP – APIs REST (Siemens Healthineers)</strong> <span>Comunicação entre sistemas legados e aplicações modernas.</span></li>
-            <li><strong>Automação de Rotina Administrativa (Stone)</strong> <span>Redução de tarefas repetitivas com RPA.</span></li>
-            <li><strong>Gestão de Documentos (Banco BV)</strong> <span>Controle e armazenamento digital de arquivos internos.</span></li>
-            <li><strong>Validação de Dados Financeiros (Riachuelo)</strong> <span>Checagem automática de inconsistências em base contábil.</span></li>
-            <li><strong>Portal Institucional Interno (Danone)</strong> <span>Site corporativo interno com autenticação segura.</span></li>
-            <li><strong>Automação de Backoffice (Icatu Seguros)</strong> <span>Robôs para processamento de grandes volumes de dados.</span></li>
-            <li><strong>Gestão de Pagamentos (Siemens Healthineers)</strong> <span>Plataforma para controle e acompanhamento de pagamentos.</span></li>
-            <li><strong>Robô de Extração de PDFs (Stone)</strong> <span>Leitura automatizada de arquivos financeiros.</span></li>
-            <li><strong>Controle Orçamentário (Banco BV)</strong> <span>Sistema de acompanhamento de metas e orçamento.</span></li>
-            <li><strong>Integração Bancária via API (Riachuelo)</strong> <span>Comunicação segura com instituições financeiras.</span></li>
-            <li><strong>Sistema de Gestão Contábil (Icatu Seguros)</strong> <span>Consolidação automática de lançamentos.</span></li>
-            <li><strong>Automação de RH Corporativo (Danone)</strong> <span>Processamento automático de admissões e desligamentos.</span></li>
-            <li><strong>Robô de Auditoria Financeira (Siemens Healthineers)</strong> <span>Validação automática de dados contábeis.</span></li>
+            <li><strong>Automação de Conciliação Bancária</strong> – Cliente: Banco BV <span>Robô para cruzamento automático de extratos, validação de divergências e geração de relatórios financeiros.</span></li>
+            <li><strong>Portal Financeiro Open Finance</strong> – Cliente: Stone <span>Sistema web para consolidação de contas, fluxo de caixa e dashboards gerenciais.</span></li>
+            <li><strong>Robô de Cálculo de Produtos Químicos</strong> – Cliente: Riachuelo <span>Automação responsável por cálculos técnicos e validação de parâmetros industriais.</span></li>
+            <li><strong>Sistema de Workflow Financeiro</strong> – Cliente: Icatu Seguros <span>Plataforma para controle de aprovações contábeis e integração SAP.</span></li>
+            <li><strong>Intranet Corporativa</strong> – Cliente: Danone <span>Portal institucional interno com mensageria, comunicados e gestão documental.</span></li>
+            <li><strong>Automação de Faturamento</strong> – Cliente: Siemens Healthineers <span>Robô para leitura de PDFs, validação e lançamento automático de invoices.</span></li>
+            <li><strong>Dashboard Executivo de Indicadores</strong> – Cliente: Stone <span>Sistema para visualização de KPIs financeiros e operacionais.</span></li>
+            <li><strong>Robô de Processamento de NF-e</strong> – Cliente: Riachuelo <span>Extração automática, armazenamento e envio de dados fiscais.</span></li>
+            <li><strong>Sistema de Gestão de Contratos</strong> – Cliente: Banco BV <span>Plataforma interna para controle de contratos e integrações bancárias.</span></li>
+            <li><strong>Automação de Fluxo de Caixa</strong> – Cliente: Icatu Seguros <span>Consolidação automática de lançamentos contábeis.</span></li>
+            <li><strong>Robô de Integração SAP</strong> – Cliente: Danone <span>Automação de rotinas administrativas com leitura e gravação de dados no SAP.</span></li>
+            <li><strong>Sistema de Controle de Acessos</strong> – Cliente: Siemens Healthineers <span>Gestão de permissões e autenticação corporativa.</span></li>
+            <li><strong>Plataforma de Mensageria Interna</strong> – Cliente: Stone <span>Sistema interno para comunicação entre departamentos.</span></li>
+            <li><strong>Automação de Relatórios Gerenciais</strong> – Cliente: Banco BV <span>Geração automática de relatórios financeiros em PDF.</span></li>
+            <li><strong>Robô de Cadastro em Massa</strong> – Cliente: Riachuelo <span>Inclusão automatizada de registros via integração API.</span></li>
+            <li><strong>Sistema de Aprovação de Despesas</strong> – Cliente: Danone <span>Plataforma interna para validação e controle de reembolsos.</span></li>
+            <li><strong>Robô de Monitoramento Financeiro</strong> – Cliente: Icatu Seguros <span>Auditoria automática de inconsistências contábeis.</span></li>
+            <li><strong>Integração ERP – APIs REST</strong> – Cliente: Siemens Healthineers <span>Comunicação entre sistemas legados e aplicações modernas.</span></li>
+            <li><strong>Automação de Rotina Administrativa</strong> – Cliente: Stone <span>Redução de tarefas repetitivas com RPA.</span></li>
+            <li><strong>Sistema de Gestão de Documentos</strong> – Cliente: Banco BV <span>Controle e armazenamento digital de arquivos internos.</span></li>
+            <li><strong>Robô de Validação de Dados Financeiros</strong> – Cliente: Riachuelo <span>Checagem automática de inconsistências em base contábil.</span></li>
+            <li><strong>Portal Institucional Interno</strong> – Cliente: Danone <span>Site corporativo interno com autenticação segura.</span></li>
+            <li><strong>Automação de Backoffice</strong> – Cliente: Icatu Seguros <span>Robôs para processamento de grandes volumes de dados.</span></li>
+            <li><strong>Sistema de Gestão de Pagamentos</strong> – Cliente: Siemens Healthineers <span>Plataforma para controle e acompanhamento de pagamentos.</span></li>
+            <li><strong>Robô de Extração de PDFs</strong> – Cliente: Stone <span>Leitura automatizada de arquivos financeiros.</span></li>
+            <li><strong>Controle Orçamentário Automatizado</strong> – Cliente: Banco BV <span>Sistema de acompanhamento de metas e orçamento.</span></li>
+            <li><strong>Integração Bancária via API</strong> – Cliente: Riachuelo <span>Comunicação segura com instituições financeiras.</span></li>
+            <li><strong>Sistema de Gestão Contábil</strong> – Cliente: Icatu Seguros <span>Consolidação automática de lançamentos.</span></li>
+            <li><strong>Automação de RH Corporativo</strong> – Cliente: Danone <span>Processamento automático de admissões e desligamentos.</span></li>
+            <li><strong>Robô de Auditoria Financeira</strong> – Cliente: Siemens Healthineers <span>Validação automática de dados contábeis.</span></li>
         </ul>
     </div>
 </section>
 
-<section class="portfolio-credibility">
-    <h2>Vamos escalar seu negócio?</h2>
-    <a href="https://wa.me/5521969409771" target="_blank" class="cta" style="text-decoration:none; padding: 15px 30px;">falar pelo WhatsApp</a>
+<section class="contact">
+    <h2>Vamos conversar?</h2>
+    <a href="https://wa.me/5521969409771" target="_blank" class="whatsapp-btn">
+        <img src="assets/img/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+        falar pelo WhatsApp
+    </a>
 </section>
 
 <script>
-    const toggle = document.querySelector('.menu-toggle');
-    const menu = document.getElementById('menu');
-    toggle.addEventListener('click', () => {
-        menu.classList.toggle('open');
-    });
+const toggle = document.querySelector('.menu-toggle');
+const menu = document.getElementById('menu');
+toggle.addEventListener('click', () => {
+    menu.classList.toggle('open');
+});
 </script>
 
 </body>
