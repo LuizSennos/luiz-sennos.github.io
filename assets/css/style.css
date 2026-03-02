@@ -46,64 +46,76 @@ header {
     border-radius: 5px;
 }
 
-/* HERO (CORREÇÃO DA FOTO E TEXTO) */
-/* AJUSTE FINO DA HERO (PC) */
+/* ================= HERO SECCION (BLINDADA) ================= */
 .hero {
-    padding: 140px 20px 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 120px 20px 60px;
     min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-content {
-    max-width: 1100px;
+    max-width: 1000px;
     width: 100%;
-    display: flex; /* Mudamos para flex para controlar melhor o tamanho */
-    justify-content: space-between;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 40px;
 }
 
-.hero-text { 
-    flex: 1; /* O texto ocupa o espaço que sobrar */
-    text-align: left; 
+/* TEXTO: Toma conta da maior parte */
+.hero-text {
+    flex: 1;
+    text-align: left;
 }
 
+.hero .top { color: #22c55e; font-size: 0.9rem; margin-bottom: 5px; }
+.hero h1 { font-size: 3rem; color: #fff; line-height: 1.1; margin-bottom: 15px; }
+.hero h1 span { color: #22c55e; }
+.hero .desc { color: #9ca3af; max-width: 500px; margin-bottom: 25px; }
+
+/* FOTO: Pequena e travada no PC */
 .hero-photo {
-    flex: 0 0 350px; /* TRAVA A FOTO: Ela não cresce mais que 350px no PC */
+    flex: 0 0 250px; /* Trava em 250px no PC - não cresce nem diminui */
 }
 
 .hero-photo img {
     width: 100%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 15px;
     border: 2px solid #22c55e;
-    box-shadow: 0 0 20px rgba(34, 197, 94, 0.2);
     display: block;
 }
 
-.hero h1 { font-size: 3rem; margin: 10px 0; color: #fff; line-height: 1.1; }
-.hero h1 span { color: #22c55e; }
-
-/* RESPONSIVO (MANTENDO O QUE FICOU BOM NO CELULAR) */
+/* ================= MOBILE (MANTENDO O QUE VOCÊ GOSTOU) ================= */
 @media (max-width: 900px) {
+    .hero {
+        padding-top: 100px;
+    }
+
     .hero-content {
-        flex-direction: column; /* Empilha no celular */
+        flex-direction: column; /* Empilha: foto em cima, texto embaixo */
+        text-align: center;
+        gap: 20px;
+    }
+
+    .hero-photo {
+        flex: 0 0 180px; /* Foto pequena no celular também */
+        width: 180px;
+    }
+
+    .hero-text {
         text-align: center;
     }
-    
-    .hero-photo {
-        flex: 0 0 auto; /* No celular ela volta ao tamanho automático */
-        width: 250px; /* Tamanho menor para não comer a tela do celular */
-        margin-bottom: 20px;
-    }
-    
-    .hero-text { 
-        text-align: center; 
+
+    .hero h1 {
+        font-size: 2.2rem;
     }
 
-    .hero h1 { font-size: 2.2rem; }
+    .hero .desc {
+        margin: 0 auto 25px;
+    }
 }
 
 /* LISTA DE PROJETOS (CORREÇÃO DE CORES) */
