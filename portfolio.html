@@ -6,65 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <style>
-        /* Ajustes de Contraste e Layout para a Lista */
-        .lista-projetos {
-            max-width: 1100px;
-            margin: 80px auto 0;
-            padding: 60px 20px;
-            border-top: 1px solid #d1d5db;
-            text-align: left; /* Alinhamento à esquerda para leitura */
-        }
-
-        .lista-projetos h3 {
-            text-align: center;
-            color: #020617;
-            margin-bottom: 50px;
-            font-size: 1.8rem;
-        }
-
-        .lista-projetos ul {
-            list-style: none;
-            padding: 0;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px 60px;
-        }
-
-        .lista-projetos li {
-            position: relative;
-            padding-left: 28px;
-            line-height: 1.6;
-        }
-
-        /* Marcador verde estilizado */
-        .lista-projetos li::before {
-            content: "●";
-            position: absolute;
-            left: 0;
-            top: 0;
-            color: #22c55e;
-            font-size: 14px;
-        }
-
-        .lista-projetos strong {
-            color: #020617;
-            display: block;
-            font-size: 1rem;
-            margin-bottom: 4px;
-        }
-
-        .lista-projetos span {
-            color: #475569; /* Cinza escuro legível */
-            font-size: 0.9rem;
-            display: block;
-        }
-
-        @media (max-width: 900px) {
-            .lista-projetos ul { grid-template-columns: 1fr; }
-        }
-    </style>
 </head>
 
 <body>
@@ -84,79 +25,46 @@
     </div>
 </header>
 
-<section class="portfolio" style="padding-top:120px;">
-    <div style="max-width: 1200px; margin: 0 auto;">
-        <h2>Projetos em destaque</h2>
-        <p>Soluções desenvolvidas para grandes empresas, focadas em automação e integração corporativa.</p>
+<section class="portfolio-hero">
+    <div class="hero-content">
+        <h1>Meus <span>Projetos</span></h1>
+        <p>Soluções desenvolvidas para grandes empresas como Riachuelo, Siemens e Danone.</p>
+    </div>
+</section>
 
-        <div class="portfolio-grid">
-            <div class="project">
-                <img src="assets/img/riachuelo.png" alt="Riachuelo" class="project-logo">
-                <h3>Robô de Impressão de Notas</h3>
-                <p>Automação que imprime mais de 50.000 notas fiscais.</p>
-            </div>
-            <div class="project">
-                <img src="assets/img/siemens.webp" alt="Siemens Healthineers" class="project-logo">
-                <h3>Integração RH via API</h3>
-                <p>Robô que recebe dados de APIs e registra automaticamente no sistema.</p>
-            </div>
-            <div class="project">
-                <img src="assets/img/icatu.png" alt="Icatu Seguros" class="project-logo">
-                <h3>Robôs Financeiros</h3>
-                <p>Consolidação financeira e ajustes contábeis em SAP.</p>
-            </div>
-            <div class="project">
-                <img src="assets/img/danone.png" alt="Danone" class="project-logo">
-                <h3>Scripts de Automação</h3>
-                <p>Automatização de rotinas internas corporativas.</p>
-            </div>
-            <div class="project">
-                <img src="assets/img/openfinance.png" alt="Open Finance" class="project-logo">
-                <h3>Controle Financeiro Integrado</h3>
-                <p>Integração Open Finance trazendo transparência e automação.</p>
-            </div>
-            <div class="project">
-                <img src="assets/img/apps.png" alt="Apps & Web" class="project-logo">
-                <h3>Sistemas Web & Apps</h3>
-                <p>Desenvolvimento completo de sistemas web e aplicativos.</p>
-            </div>
+<section class="portfolio" style="background: #eef2f7;">
+    <div class="portfolio-grid">
+        <div class="project">
+            <img src="assets/img/riachuelo.png" alt="Riachuelo" style="max-width: 100px; margin-bottom: 15px;">
+            <h3>Robô de Notas Fiscais</h3>
+            <p>Automação que processa mais de 50.000 notas fiscais para o grupo Riachuelo.</p>
         </div>
+        <div class="project">
+            <img src="assets/img/siemens.webp" alt="Siemens" style="max-width: 100px; margin-bottom: 15px;">
+            <h3>Integração RH API</h3>
+            <p>Consumo de APIs e registro automático de dados no sistema de RH da Siemens.</p>
+        </div>
+        <div class="project">
+            <img src="assets/img/icatu.png" alt="Icatu" style="max-width: 100px; margin-bottom: 15px;">
+            <h3>Consolidação SAP</h3>
+            <p>Robôs para ajustes contábeis e financeiros dentro do ambiente SAP Icatu.</p>
+        </div>
+    </div>
 
-        <div class="lista-projetos">
-            <h3>Outros Projetos Corporativos</h3>
-            <ul>
-                <li><strong>Automação de Conciliação Bancária – Banco BV</strong> <span>Robô para cruzamento automático de extratos e geração de relatórios financeiros.</span></li>
-                <li><strong>Portal Financeiro Open Finance – Stone</strong> <span>Sistema web para consolidação de contas, fluxo de caixa e dashboards.</span></li>
-                <li><strong>Robô de Cálculo Químico – Riachuelo</strong> <span>Automação responsável por cálculos técnicos e validação industrial.</span></li>
-                <li><strong>Workflow Financeiro – Icatu Seguros</strong> <span>Plataforma para controle de aprovações contábeis e integração SAP.</span></li>
-                <li><strong>Intranet Corporativa – Danone</strong> <span>Portal institucional interno com mensageria e gestão documental.</span></li>
-                <li><strong>Automação de Faturamento – Siemens</strong> <span>Robô para leitura de PDFs e lançamento automático de invoices.</span></li>
-                <li><strong>Dashboard de Indicadores – Stone</strong> <span>Sistema para visualização de KPIs financeiros e operacionais.</span></li>
-                <li><strong>Robô de Processamento NF-e – Riachuelo</strong> <span>Extração automática, armazenamento e envio de dados fiscais.</span></li>
-                <li><strong>Gestão de Contratos – Banco BV</strong> <span>Plataforma interna para controle de contratos e integrações bancárias.</span></li>
-                <li><strong>Automação de Fluxo de Caixa – Icatu</strong> <span>Consolidação automática de lançamentos contábeis.</span></li>
-                <li><strong>Robô de Integração SAP – Danone</strong> <span>Automação de rotinas administrativas com leitura e gravação no SAP.</span></li>
-                <li><strong>Controle de Acessos – Siemens</strong> <span>Gestão de permissões e autenticação corporativa.</span></li>
-                <li><strong>Mensageria Interna – Stone</strong> <span>Sistema interno para comunicação entre departamentos.</span></li>
-                <li><strong>Relatórios Gerenciais – Banco BV</strong> <span>Geração automática de relatórios financeiros em PDF.</span></li>
-                <li><strong>Robô de Cadastro em Massa – Riachuelo</strong> <span>Inclusão automatizada de registros via integração API.</span></li>
-                <li><strong>Aprovação de Despesas – Danone</strong> <span>Plataforma interna para validação e controle de reembolsos.</span></li>
-                <li><strong>Monitoramento Financeiro – Icatu</strong> <span>Auditoria automática de inconsistências contábeis.</span></li>
-                <li><strong>Integração ERP APIs – Siemens</strong> <span>Comunicação entre sistemas legados e aplicações modernas.</span></li>
-                <li><strong>Automação Administrativa – Stone</strong> <span>Redução de tarefas repetitivas com RPA.</span></li>
-                <li><strong>Gestão de Documentos – Banco BV</strong> <span>Controle e armazenamento digital de arquivos internos.</span></li>
-                <li><strong>Validação Financeira – Riachuelo</strong> <span>Checagem automática de inconsistências em base contábil.</span></li>
-                <li><strong>Portal Institucional – Danone</strong> <span>Site corporativo interno com autenticação segura.</span></li>
-                <li><strong>Automação Backoffice – Icatu</strong> <span>Robôs para processamento de grandes volumes de dados.</span></li>
-                <li><strong>Gestão de Pagamentos – Siemens</strong> <span>Plataforma para controle e acompanhamento de pagamentos.</span></li>
-                <li><strong>Robô de Extração PDFs – Stone</strong> <span>Leitura automatizada de arquivos financeiros.</span></li>
-                <li><strong>Controle Orçamentário – Banco BV</strong> <span>Sistema de acompanhamento de metas e orçamento.</span></li>
-                <li><strong>Integração Bancária API – Riachuelo</strong> <span>Comunicação segura com instituições financeiras.</span></li>
-                <li><strong>Gestão Contábil – Icatu Seguros</strong> <span>Consolidação automática de lançamentos.</span></li>
-                <li><strong>Automação de RH – Danone</strong> <span>Processamento automático de admissões e desligamentos.</span></li>
-                <li><strong>Auditoria Financeira – Siemens</strong> <span>Validação automática de dados contábeis.</span></li>
+    <div class="lista-projetos">
+        <h3>Outros Projetos & Automações</h3>
+        <ul>
+            <li><strong>Conciliação Bancária – Banco BV</strong> <span>Cruzamento automático de extratos e relatórios.</span></li>
+            <li><strong>Portal Open Finance – Stone</strong> <span>Dashboard de consolidação de contas bancárias.</span></li>
+            <li><strong>Cálculo Químico – Riachuelo</strong> <span>Validação de parâmetros industriais via automação.</span></li>
+            <li><strong>Workflow SAP – Icatu Seguros</strong> <span>Sistema de aprovação de lançamentos contábeis.</span></li>
+            <li><strong>Intranet Corporativa – Danone</strong> <span>Gestão documental e comunicação interna.</span></li>
+            <li><strong>Faturamento Automático – Siemens</strong> <span>Leitura de invoices em PDF e registro em ERP.</span></li>
+            <li><strong>Monitoramento de NF-e – Riachuelo</strong> <span>Auditoria fiscal automática de registros de entrada.</span></li>
+            <li><strong>Gestão de Contratos – Banco BV</strong> <span>Plataforma para controle de prazos e termos bancários.</span></li>
+            <li><strong>Auditoria Contábil – Siemens</strong> <span>Robô para identificação de inconsistências fiscais.</span></li>
+            <li><strong>API de Admissões – Danone</strong> <span>Integração entre sistemas de recrutamento e folha.</span></li>
             </ul>
-        </div>
     </div>
 </section>
 
