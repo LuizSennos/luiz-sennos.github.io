@@ -47,6 +47,7 @@ header {
 }
 
 /* HERO (CORREÇÃO DA FOTO E TEXTO) */
+/* AJUSTE FINO DA HERO (PC) */
 .hero {
     padding: 140px 20px 80px;
     display: flex;
@@ -57,23 +58,52 @@ header {
 
 .hero-content {
     max-width: 1100px;
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Texto de um lado, foto do outro */
-    gap: 40px;
+    width: 100%;
+    display: flex; /* Mudamos para flex para controlar melhor o tamanho */
+    justify-content: space-between;
     align-items: center;
+    gap: 40px;
 }
 
-.hero-text { text-align: left; }
-.hero h1 { font-size: 3rem; margin: 10px 0; color: #fff; }
-.hero h1 span { color: #22c55e; }
-.hero .top { color: #22c55e; font-size: 1rem; }
+.hero-text { 
+    flex: 1; /* O texto ocupa o espaço que sobrar */
+    text-align: left; 
+}
+
+.hero-photo {
+    flex: 0 0 350px; /* TRAVA A FOTO: Ela não cresce mais que 350px no PC */
+}
 
 .hero-photo img {
     width: 100%;
-    max-width: 450px;
+    height: auto;
     border-radius: 20px;
     border: 2px solid #22c55e;
     box-shadow: 0 0 20px rgba(34, 197, 94, 0.2);
+    display: block;
+}
+
+.hero h1 { font-size: 3rem; margin: 10px 0; color: #fff; line-height: 1.1; }
+.hero h1 span { color: #22c55e; }
+
+/* RESPONSIVO (MANTENDO O QUE FICOU BOM NO CELULAR) */
+@media (max-width: 900px) {
+    .hero-content {
+        flex-direction: column; /* Empilha no celular */
+        text-align: center;
+    }
+    
+    .hero-photo {
+        flex: 0 0 auto; /* No celular ela volta ao tamanho automático */
+        width: 250px; /* Tamanho menor para não comer a tela do celular */
+        margin-bottom: 20px;
+    }
+    
+    .hero-text { 
+        text-align: center; 
+    }
+
+    .hero h1 { font-size: 2.2rem; }
 }
 
 /* LISTA DE PROJETOS (CORREÇÃO DE CORES) */
