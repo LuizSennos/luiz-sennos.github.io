@@ -29,6 +29,31 @@
   color:#64748b;
   font-size:0.85rem;
 }
+
+/* LISTA EXTRA */
+.more-projects {
+  margin-top:80px;
+}
+
+.more-projects h2 {
+  margin-bottom:20px;
+}
+
+.project-list {
+  columns: 2;
+  gap: 40px;
+}
+
+.project-list li {
+  margin-bottom:12px;
+  font-size:0.95rem;
+  color:#334155;
+}
+@media(max-width:768px){
+  .project-list {
+    columns:1;
+  }
+}
 </style>
 </head>
 
@@ -51,72 +76,78 @@
 </header>
 
 <section class="portfolio">
-  <h2>Projetos Desenvolvidos</h2>
-  <p>Automação, sistemas web, integrações corporativas e soluções sob medida.</p>
+
+  <h2>Projetos em Destaque</h2>
+  <p>Principais projetos corporativos desenvolvidos.</p>
 
   <div class="portfolio-grid">
 
-    <div class="project"><h3>1. Sistema de Gestão de RH – Danone</h3><p>Módulos internos de admissão, desligamento e workflow.</p><small>React • Node • PostgreSQL • Gestão de RH • Intranet</small></div>
+    <div class="project">
+      <img src="assets/img/riachuelo.png" class="project-logo">
+      <h3>Robô Fiscal SAP – Riachuelo</h3>
+      <p>Impressão e controle automatizado de mais de 50.000 notas fiscais.</p>
+    </div>
 
-    <div class="project"><h3>2. Robô Fiscal SAP – Riachuelo</h3><p>Impressão e controle automatizado de notas fiscais.</p><small>Python • UiPath • SAP • Automação de rotina</small></div>
+    <div class="project">
+      <img src="assets/img/siemens.webp" class="project-logo">
+      <h3>Sistema de Invoices – Siemens Healthineers</h3>
+      <p>Validação e registro automático de invoices via API.</p>
+    </div>
 
-    <div class="project"><h3>3. Sistema de Invoices – Siemens Healthineers</h3><p>Validação e registro automático de invoices via API.</p><small>FastAPI • PostgreSQL • Integração API</small></div>
+    <div class="project">
+      <img src="assets/img/icatu.png" class="project-logo">
+      <h3>Robôs Financeiros – Icatu</h3>
+      <p>Consolidação contábil e automação financeira integrada ao SAP.</p>
+    </div>
 
-    <div class="project"><h3>4. Robô de Cálculo Químico – Riachuelo</h3><p>Cálculo automatizado de composição química industrial.</p><small>Python • Pandas • Automação técnica</small></div>
-
-    <div class="project"><h3>5. Plataforma de Controle Financeiro</h3><p>Gestão de fluxo de caixa e consolidação bancária.</p><small>React • Node • Open Finance • Fluxo de caixa</small></div>
-
-    <div class="project"><h3>6. Intranet Corporativa</h3><p>Portal interno com mensageria e gestão documental.</p><small>Node • React • Mensageria • Site interno</small></div>
-
-    <div class="project"><h3>7. Robô de Conciliação SAP</h3><p>Automação de conciliações contábeis.</p><small>Python • SAP • Automação financeira</small></div>
-
-    <div class="project"><h3>8. Sistema de Aprovação Financeira</h3><p>Workflow digital para aprovação de pagamentos.</p><small>React • PostgreSQL • Workflow</small></div>
-
-    <div class="project"><h3>9. Dashboard Gerencial Executivo</h3><p>Painel de indicadores estratégicos.</p><small>React • BI • KPIs</small></div>
-
-    <div class="project"><h3>10. Sistema de Controle de Estoque</h3><p>Gestão automatizada de inventário.</p><small>Node • PostgreSQL • ERP interno</small></div>
-
-    <div class="project"><h3>11. Robô de Extração de Dados</h3><p>Captura e tratamento de dados via scraping e APIs.</p><small>Python • APIs • Web Automation</small></div>
-
-    <div class="project"><h3>12. Sistema de Gestão de Tarefas</h3><p>Controle interno de produtividade.</p><small>React • Node • Gestão interna</small></div>
-
-    <div class="project"><h3>13. Integração Power Automate</h3><p>Fluxos automáticos entre sistemas corporativos.</p><small>Power Automate • APIs • Integração</small></div>
-
-    <div class="project"><h3>14. Robô A360 Financeiro</h3><p>Processamento automatizado de planilhas financeiras.</p><small>Automation Anywhere • RPA</small></div>
-
-    <div class="project"><h3>15. Sistema de Gestão de Pacientes</h3><p>Painel administrativo e prontuário digital.</p><small>React • FastAPI • PostgreSQL</small></div>
-
-    <div class="project"><h3>16. API de Integração Corporativa</h3><p>Backend estruturado para múltiplas integrações.</p><small>FastAPI • Node • REST API</small></div>
-
-    <div class="project"><h3>17. Sistema de Controle de Contratos</h3><p>Gestão e versionamento de contratos empresariais.</p><small>Node • PostgreSQL</small></div>
-
-    <div class="project"><h3>18. Robô de Processamento Bancário</h3><p>Automação de lançamentos financeiros.</p><small>Python • RPA • Conciliação</small></div>
-
-    <div class="project"><h3>19. Site Institucional Premium</h3><p>Desenvolvimento web focado em conversão.</p><small>HTML • CSS • Performance</small></div>
-
-    <div class="project"><h3>20. Sistema de Gestão Comercial</h3><p>Controle de leads e funil de vendas.</p><small>React • CRM • PostgreSQL</small></div>
-
-    <div class="project"><h3>21. Plataforma de Relatórios Financeiros</h3><p>Exportação automática de relatórios gerenciais.</p><small>Node • BI • Automação</small></div>
-
-    <div class="project"><h3>22. Robô de Cadastro Massivo</h3><p>Inserção automatizada de dados em sistemas web.</p><small>UiPath • Selenium • RPA</small></div>
-
-    <div class="project"><h3>23. Sistema de Gestão de Fornecedores</h3><p>Cadastro e validação automatizada de parceiros.</p><small>React • Node</small></div>
-
-    <div class="project"><h3>24. Plataforma de Atendimento Interno</h3><p>Gestão de chamados corporativos.</p><small>Helpdesk • React • PostgreSQL</small></div>
-
-    <div class="project"><h3>25. Robô de Monitoramento de Processos</h3><p>Validação automática de falhas operacionais.</p><small>Python • Logs • Automação</small></div>
-
-    <div class="project"><h3>26. Sistema de Gestão de Pagamentos</h3><p>Controle de contas a pagar e receber.</p><small>Node • Financeiro • Fluxo de caixa</small></div>
-
-    <div class="project"><h3>27. Integração SAP – RH</h3><p>Automação de envio de dados trabalhistas.</p><small>SAP • API • RPA</small></div>
-
-    <div class="project"><h3>28. Plataforma de Mensageria Corporativa</h3><p>Comunicação interna estruturada.</p><small>Node • WebSocket • Mensageria</small></div>
-
-    <div class="project"><h3>29. Sistema de Controle de Indicadores</h3><p>Painel estratégico para diretoria.</p><small>React • Dashboard • KPIs</small></div>
-
-    <div class="project"><h3>30. Estrutura Completa de Automação Empresarial</h3><p>Arquitetura combinando RPA, APIs e sistemas web.</p><small>Python • Node • React • PostgreSQL • UiPath • A360</small></div>
+    <div class="project">
+      <img src="assets/img/danone.png" class="project-logo">
+      <h3>Gestão de RH – Danone</h3>
+      <p>Sistema interno para controle de fluxo de admissões e desligamentos.</p>
+    </div>
 
   </div>
+
+
+  <!-- LISTA COMPLEMENTAR -->
+  <div class="more-projects">
+    <h2>Outros Projetos Desenvolvidos</h2>
+
+    <ul class="project-list">
+      <li>1. Robô de cálculo químico industrial – Riachuelo</li>
+      <li>2. Sistema de controle de fluxo de caixa corporativo</li>
+      <li>3. Plataforma de Open Finance integrada</li>
+      <li>4. Intranet institucional com mensageria interna</li>
+      <li>5. Robô de conciliação financeira SAP</li>
+      <li>6. Sistema de gestão de contratos empresariais</li>
+      <li>7. Dashboard executivo com KPIs estratégicos</li>
+      <li>8. API corporativa com FastAPI e PostgreSQL</li>
+      <li>9. Robô RPA com UiPath para cadastro massivo</li>
+      <li>10. Automação com Power Automate para integração interna</li>
+      <li>11. Robô A360 para processamento financeiro</li>
+      <li>12. Sistema web administrativo completo (React + Node)</li>
+      <li>13. Plataforma de controle de estoque corporativo</li>
+      <li>14. Sistema de gestão comercial interno</li>
+      <li>15. Plataforma de atendimento interno (Helpdesk)</li>
+      <li>16. Robô de extração de dados via API</li>
+      <li>17. Sistema de gestão de fornecedores</li>
+      <li>18. Plataforma de relatórios financeiros automatizados</li>
+      <li>19. Sistema de controle de pagamentos empresariais</li>
+      <li>20. Robô de processamento bancário automatizado</li>
+      <li>21. Site institucional premium com foco em conversão</li>
+      <li>22. Sistema de prontuário digital multidisciplinar</li>
+      <li>23. Plataforma SaaS com backend FastAPI</li>
+      <li>24. Integração SAP RH automatizada</li>
+      <li>25. Sistema de workflow de aprovação financeira</li>
+      <li>26. Plataforma de mensageria corporativa interna</li>
+      <li>27. Sistema de gestão de indicadores estratégicos</li>
+      <li>28. Robô de validação contábil automatizada</li>
+      <li>29. Estrutura completa de automação empresarial (Python + Node + React)</li>
+      <li>30. Sistema web com arquitetura escalável e banco PostgreSQL</li>
+    </ul>
+
+  </div>
+
 </section>
 
 <section class="contact">
