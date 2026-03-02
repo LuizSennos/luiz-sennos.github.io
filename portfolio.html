@@ -41,11 +41,31 @@
     border-radius: 20px;
     text-align: left;
     border: 1px solid #e2e8f0;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+}
+
+/* LOGO */
+.project-logo {
+    margin-bottom: 20px;
+}
+
+.project-logo img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+
+    filter: grayscale(100%) brightness(0.8);
+    opacity: 0.7;
+    transition: 0.3s ease;
+}
+
+.project-card:hover .project-logo img {
+    filter: grayscale(0%) brightness(1);
+    opacity: 1;
 }
 
 .project-card h3 {
@@ -132,6 +152,9 @@
 <div class="portfolio-grid">
 
 <div class="project-card">
+<div class="project-logo">
+<img src="assets/img/riachuelo.png" alt="Riachuelo">
+</div>
 <h3>Robô Fiscal SAP</h3>
 <p><strong>Cliente:</strong> Riachuelo</p>
 <p><strong>Stack:</strong> Python, SAP, UiPath</p>
@@ -139,6 +162,9 @@
 </div>
 
 <div class="project-card">
+<div class="project-logo">
+<img src="assets/img/siemens.png" alt="Siemens">
+</div>
 <h3>Sistema de Invoices</h3>
 <p><strong>Cliente:</strong> Siemens Healthineers</p>
 <p><strong>Stack:</strong> Node.js, FastAPI, PostgreSQL</p>
@@ -146,6 +172,9 @@
 </div>
 
 <div class="project-card">
+<div class="project-logo">
+<img src="img/icatu.png" alt="Icatu">
+</div>
 <h3>Robôs Financeiros</h3>
 <p><strong>Cliente:</strong> Icatu Seguros</p>
 <p><strong>Stack:</strong> Python, Power Automate, SAP FI</p>
@@ -153,6 +182,9 @@
 </div>
 
 <div class="project-card">
+<div class="project-logo">
+<img src="img/logos/danone.png" alt="Danone">
+</div>
 <h3>Sistema de Gestão de RH</h3>
 <p><strong>Cliente:</strong> Danone</p>
 <p><strong>Stack:</strong> React, Node.js, PostgreSQL</p>
@@ -160,6 +192,9 @@
 </div>
 
 <div class="project-card">
+<div class="project-logo">
+<img src="img/logos/stone.png" alt="Stone">
+</div>
 <h3>Portal Intranet Corporativa</h3>
 <p><strong>Cliente:</strong> Grupo Educacional</p>
 <p><strong>Stack:</strong> React, API REST, JWT</p>
@@ -167,6 +202,9 @@
 </div>
 
 <div class="project-card">
+<div class="project-logo">
+<img src="img/logos/banco-bv.png" alt="Banco BV">
+</div>
 <h3>Automação de Fluxo de Caixa</h3>
 <p><strong>Cliente:</strong> Holding Financeira</p>
 <p><strong>Stack:</strong> Python, PostgreSQL, Integração Bancária</p>
@@ -175,7 +213,11 @@
 
 </div>
 
-<div class="lista-projetos">
+<!-- SUA LISTA GRANDE CONTINUA IGUAL DAQUI PRA BAIXO -->
+
+</section>
+
+
 
 <h2>Outros Projetos Corporativos</h2>
 
