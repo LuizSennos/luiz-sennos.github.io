@@ -198,8 +198,22 @@ header {
     text-decoration: none; 
     display: inline-flex; 
     align-items: center; 
+    justify-content: center;
     gap: 10px; 
     font-weight: 500; 
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn img,
+.whatsapp-btn svg {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.whatsapp-btn:hover {
+    background: #16a34a;
+    transform: translateY(-2px);
 }
 
 /* ========================= */
