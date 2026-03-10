@@ -28,6 +28,57 @@
     color: #475569;
 }
 
+
+/* SINERGYA DESTAQUE */
+
+.featured-project {
+
+    max-width:1100px;
+    margin:0 auto 100px;
+    background:white;
+    border-radius:20px;
+    border:1px solid #e2e8f0;
+
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+
+    overflow:hidden;
+}
+
+.featured-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.featured-content{
+    padding:40px;
+}
+
+.featured-content h2{
+    margin-bottom:20px;
+}
+
+.featured-content p{
+    margin-bottom:10px;
+    color:#475569;
+}
+
+.featured-content strong{
+    color:#020617;
+}
+
+.featured-content a{
+    display:inline-block;
+    margin-top:15px;
+    font-weight:500;
+    text-decoration:none;
+    color:#2563eb;
+}
+
+
+/* GRID ORIGINAL */
+
 .portfolio-grid {
     max-width: 1100px;
     margin: 0 auto 100px;
@@ -81,60 +132,16 @@
     color: #020617;
 }
 
-.project-card a {
-    display: inline-block;
-    margin-top: 10px;
-    font-weight: 500;
-    text-decoration: none;
-    color: #2563eb;
+
+@media (max-width:900px){
+
+.featured-project{
+grid-template-columns:1fr;
 }
 
-.project-card a:hover {
-    text-decoration: underline;
+.portfolio-grid{
+grid-template-columns:1fr;
 }
-
-.lista-projetos {
-    max-width: 1100px;
-    margin: auto;
-}
-
-.lista-projetos h2 {
-    margin-bottom: 40px;
-}
-
-.lista-projetos ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 14px 40px;
-}
-
-.lista-projetos li {
-    padding-left: 20px;
-    position: relative;
-    font-size: 0.9rem;
-}
-
-.lista-projetos li::before {
-    content: "●";
-    position: absolute;
-    left: 0;
-    color: #22c55e;
-}
-
-.lista-projetos strong {
-    color: #020617;
-}
-
-@media (max-width: 900px) {
-
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .lista-projetos ul {
-        grid-template-columns: 1fr;
-    }
 
 }
 
@@ -159,22 +166,24 @@
   </div>
 </header>
 
+
 <section class="portfolio-page">
 
 <h1>Projetos em Destaque</h1>
 <p class="sub">Principais sistemas e automações desenvolvidos.</p>
 
-<div class="portfolio-grid">
 
-<!-- SINERGYA -->
+<!-- SINERGYA GRANDE -->
 
-<div class="project-card">
+<div class="featured-project">
 
-<div class="project-logo">
-<img src="assets/img/sinergya.png" alt="Sinergya">
+<div class="featured-image">
+<img src="assets/img/sinergya.png">
 </div>
 
-<h3>Sinergya – Plataforma de Comunicação Clínica</h3>
+<div class="featured-content">
+
+<h2>Sinergya – Plataforma de Comunicação Clínica</h2>
 
 <p><strong>Produto:</strong> SaaS de saúde</p>
 
@@ -191,109 +200,62 @@ Ver projeto →
 
 </div>
 
-
-<!-- RIAchuelo -->
-
-<div class="project-card">
-
-<div class="project-logo">
-<img src="assets/img/riachuelo.png" alt="Riachuelo">
 </div>
 
+
+
+<!-- RESTO DOS PROJETOS -->
+
+<div class="portfolio-grid">
+
+<div class="project-card">
+<div class="project-logo">
+<img src="assets/img/riachuelo.png">
+</div>
 <h3>Robô Fiscal SAP</h3>
-
 <p><strong>Cliente:</strong> Riachuelo</p>
-
 <p><strong>Stack:</strong> Python, SAP, UiPath</p>
-
-<p>
-Automação responsável pelo processamento de mais de 50.000 notas fiscais com integração direta ao SAP.
-</p>
-
+<p>Automação responsável pelo processamento de mais de 50.000 notas fiscais com integração direta ao SAP.</p>
 </div>
-
-
-<!-- SIEMENS -->
 
 <div class="project-card">
-
 <div class="project-logo">
-<img src="assets/img/siemens.webp" alt="Siemens">
+<img src="assets/img/siemens.webp">
 </div>
-
 <h3>Sistema de Invoices</h3>
-
 <p><strong>Cliente:</strong> Siemens Healthineers</p>
-
 <p><strong>Stack:</strong> Node.js, FastAPI, PostgreSQL</p>
-
-<p>
-Sistema de validação e processamento de invoices integrado a APIs corporativas.
-</p>
-
+<p>Sistema de validação e processamento de invoices integrado a APIs corporativas.</p>
 </div>
-
-
-<!-- ICATU -->
 
 <div class="project-card">
-
 <div class="project-logo">
-<img src="assets/img/icatu.png" alt="Icatu">
+<img src="assets/img/icatu.png">
 </div>
-
 <h3>Robôs Financeiros</h3>
-
 <p><strong>Cliente:</strong> Icatu Seguros</p>
-
 <p><strong>Stack:</strong> Python, Power Automate, SAP FI</p>
-
-<p>
-Automação responsável por consolidação contábil e processamento financeiro.
-</p>
-
+<p>Automação responsável por consolidação contábil e processamento financeiro.</p>
 </div>
-
-
-<!-- DANONE -->
 
 <div class="project-card">
-
 <div class="project-logo">
-<img src="assets/img/danone.png" alt="Danone">
+<img src="assets/img/danone.png">
 </div>
-
 <h3>Sistema de Gestão de RH</h3>
-
 <p><strong>Cliente:</strong> Danone</p>
-
 <p><strong>Stack:</strong> React, Node.js, PostgreSQL</p>
-
-<p>
-Plataforma interna para gestão de processos de admissão e desligamento.
-</p>
-
+<p>Plataforma interna para gestão de processos de admissão e desligamento.</p>
 </div>
-
-
-<!-- STONE -->
 
 <div class="project-card">
-
 <div class="project-logo">
-<img src="assets/img/stone.png" alt="Stone">
+<img src="assets/img/stone.png">
 </div>
-
 <h3>Portal Intranet Corporativa</h3>
-
 <p><strong>Cliente:</strong> Grupo Educacional</p>
-
 <p><strong>Stack:</strong> React, API REST, JWT</p>
-
-<p>
-Portal interno com mensageria corporativa e dashboards executivos.
-</p>
-
+<p>Portal interno com mensageria corporativa e dashboards executivos.</p>
 </div>
 
 </div>
