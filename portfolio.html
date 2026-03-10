@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>Projetos | Luiz Sennos</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 
@@ -48,7 +49,6 @@
     transform: translateY(-6px);
 }
 
-/* LOGO */
 .project-logo {
     margin-bottom: 20px;
 }
@@ -57,7 +57,6 @@
     height: 40px;
     width: auto;
     object-fit: contain;
-
     filter: grayscale(100%) brightness(0.8);
     opacity: 0.7;
     transition: 0.3s ease;
@@ -80,6 +79,18 @@
 
 .project-card strong {
     color: #020617;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #2563eb;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
 }
 
 .lista-projetos {
@@ -116,6 +127,7 @@
 }
 
 @media (max-width: 900px) {
+
     .portfolio-grid {
         grid-template-columns: 1fr;
     }
@@ -123,10 +135,12 @@
     .lista-projetos ul {
         grid-template-columns: 1fr;
     }
+
 }
 
 </style>
 </head>
+
 <body>
 
 <header>
@@ -135,6 +149,7 @@
         <strong>luizsennos.dev</strong>
         <button class="menu-toggle">☰</button>
     </div>
+
     <nav id="menu">
       <a href="index.html#sobre">sobre</a>
       <a href="index.html#servicos">serviços</a>
@@ -147,178 +162,153 @@
 <section class="portfolio-page">
 
 <h1>Projetos em Destaque</h1>
-<p class="sub">Principais projetos corporativos desenvolvidos.</p>
+<p class="sub">Principais sistemas e automações desenvolvidos.</p>
 
 <div class="portfolio-grid">
 
+<!-- SINERGYA -->
+
 <div class="project-card">
+
+<div class="project-logo">
+<img src="assets/img/sinergya.png" alt="Sinergya">
+</div>
+
+<h3>Sinergya – Plataforma de Comunicação Clínica</h3>
+
+<p><strong>Produto:</strong> SaaS de saúde</p>
+
+<p><strong>Stack:</strong> FastAPI, PostgreSQL, WebSockets, PWA</p>
+
+<p>
+Plataforma multiprofissional para comunicação entre equipes clínicas e pacientes.
+Inclui chat em tempo real, envio de áudio, fotos, anexos, diário clínico e gestão de tarefas terapêuticas.
+</p>
+
+<a href="https://sinergya.app.br" target="_blank">
+Ver projeto →
+</a>
+
+</div>
+
+
+<!-- RIAchuelo -->
+
+<div class="project-card">
+
 <div class="project-logo">
 <img src="assets/img/riachuelo.png" alt="Riachuelo">
 </div>
+
 <h3>Robô Fiscal SAP</h3>
+
 <p><strong>Cliente:</strong> Riachuelo</p>
+
 <p><strong>Stack:</strong> Python, SAP, UiPath</p>
-<p>Automação de +50.000 notas fiscais integrada ao SAP.</p>
+
+<p>
+Automação responsável pelo processamento de mais de 50.000 notas fiscais com integração direta ao SAP.
+</p>
+
 </div>
 
+
+<!-- SIEMENS -->
+
 <div class="project-card">
+
 <div class="project-logo">
 <img src="assets/img/siemens.webp" alt="Siemens">
 </div>
+
 <h3>Sistema de Invoices</h3>
+
 <p><strong>Cliente:</strong> Siemens Healthineers</p>
+
 <p><strong>Stack:</strong> Node.js, FastAPI, PostgreSQL</p>
-<p>Validação automática e integração via API REST corporativa.</p>
+
+<p>
+Sistema de validação e processamento de invoices integrado a APIs corporativas.
+</p>
+
 </div>
 
+
+<!-- ICATU -->
+
 <div class="project-card">
+
 <div class="project-logo">
 <img src="assets/img/icatu.png" alt="Icatu">
 </div>
+
 <h3>Robôs Financeiros</h3>
+
 <p><strong>Cliente:</strong> Icatu Seguros</p>
+
 <p><strong>Stack:</strong> Python, Power Automate, SAP FI</p>
-<p>Consolidação contábil e automação financeira.</p>
+
+<p>
+Automação responsável por consolidação contábil e processamento financeiro.
+</p>
+
 </div>
 
+
+<!-- DANONE -->
+
 <div class="project-card">
+
 <div class="project-logo">
 <img src="assets/img/danone.png" alt="Danone">
 </div>
+
 <h3>Sistema de Gestão de RH</h3>
+
 <p><strong>Cliente:</strong> Danone</p>
+
 <p><strong>Stack:</strong> React, Node.js, PostgreSQL</p>
-<p>Plataforma interna para fluxo de admissões e desligamentos.</p>
+
+<p>
+Plataforma interna para gestão de processos de admissão e desligamento.
+</p>
+
 </div>
 
+
+<!-- STONE -->
+
 <div class="project-card">
+
 <div class="project-logo">
 <img src="assets/img/stone.png" alt="Stone">
 </div>
+
 <h3>Portal Intranet Corporativa</h3>
+
 <p><strong>Cliente:</strong> Grupo Educacional</p>
+
 <p><strong>Stack:</strong> React, API REST, JWT</p>
-<p>Portal interno com mensageria e dashboards executivos.</p>
-</div>
 
-<div class="project-card">
-<div class="project-logo">
-<img src="assets/img/banco-bv.png" alt="Banco BV">
-</div>
-<h3>Automação de Fluxo de Caixa</h3>
-<p><strong>Cliente:</strong> Holding Financeira</p>
-<p><strong>Stack:</strong> Python, PostgreSQL, Integração Bancária</p>
-<p>Controle financeiro automatizado integrado a ERP.</p>
-</div>
+<p>
+Portal interno com mensageria corporativa e dashboards executivos.
+</p>
 
 </div>
-
-<div class="lista-projetos">
-
-<h2>Outros Projetos Corporativos</h2>
-
-<ul>
-
-<li><strong>Automação de Conciliação Bancária</strong> – Cliente: Banco BV<br>
-Robô para cruzamento automático de extratos, validação de divergências e geração de relatórios financeiros.</li>
-
-<li><strong>Portal Financeiro Open Finance</strong> – Cliente: Stone<br>
-Sistema web para consolidação de contas, fluxo de caixa e dashboards gerenciais.</li>
-
-<li><strong>Robô de Cálculo de Produtos Químicos</strong> – Cliente: Riachuelo<br>
-Automação responsável por cálculos técnicos e validação de parâmetros industriais.</li>
-
-<li><strong>Sistema de Workflow Financeiro</strong> – Cliente: Icatu Seguros<br>
-Plataforma para controle de aprovações contábeis e integração SAP.</li>
-
-<li><strong>Intranet Corporativa</strong> – Cliente: Danone<br>
-Portal institucional interno com mensageria, comunicados e gestão documental.</li>
-
-<li><strong>Automação de Faturamento</strong> – Cliente: Siemens Healthineers<br>
-Robô para leitura de PDFs, validação e lançamento automático de invoices.</li>
-
-<li><strong>Dashboard Executivo de Indicadores</strong> – Cliente: Stone<br>
-Sistema para visualização de KPIs financeiros e operacionais.</li>
-
-<li><strong>Robô de Processamento de NF-e</strong> – Cliente: Riachuelo<br>
-Extração automática, armazenamento e envio de dados fiscais.</li>
-
-<li><strong>Sistema de Gestão de Contratos</strong> – Cliente: Banco BV<br>
-Plataforma interna para controle de contratos e integrações bancárias.</li>
-
-<li><strong>Automação de Fluxo de Caixa</strong> – Cliente: Icatu Seguros<br>
-Consolidação automática de lançamentos contábeis.</li>
-
-<li><strong>Robô de Integração SAP</strong> – Cliente: Danone<br>
-Automação de rotinas administrativas com leitura e gravação de dados no SAP.</li>
-
-<li><strong>Sistema de Controle de Acessos</strong> – Cliente: Siemens Healthineers<br>
-Gestão de permissões e autenticação corporativa.</li>
-
-<li><strong>Plataforma de Mensageria Interna</strong> – Cliente: Stone<br>
-Sistema interno para comunicação entre departamentos.</li>
-
-<li><strong>Automação de Relatórios Gerenciais</strong> – Cliente: Banco BV<br>
-Geração automática de relatórios financeiros em PDF.</li>
-
-<li><strong>Robô de Cadastro em Massa</strong> – Cliente: Riachuelo<br>
-Inclusão automatizada de registros via integração API.</li>
-
-<li><strong>Sistema de Aprovação de Despesas</strong> – Cliente: Danone<br>
-Plataforma interna para validação e controle de reembolsos.</li>
-
-<li><strong>Robô de Monitoramento Financeiro</strong> – Cliente: Icatu Seguros<br>
-Auditoria automática de inconsistências contábeis.</li>
-
-<li><strong>Integração ERP – APIs REST</strong> – Cliente: Siemens Healthineers<br>
-Comunicação entre sistemas legados e aplicações modernas.</li>
-
-<li><strong>Automação de Rotina Administrativa</strong> – Cliente: Stone<br>
-Redução de tarefas repetitivas com RPA.</li>
-
-<li><strong>Sistema de Gestão de Documentos</strong> – Cliente: Banco BV<br>
-Controle e armazenamento digital de arquivos internos.</li>
-
-<li><strong>Robô de Validação de Dados Financeiros</strong> – Cliente: Riachuelo<br>
-Checagem automática de inconsistências em base contábil.</li>
-
-<li><strong>Portal Institucional Interno</strong> – Cliente: Danone<br>
-Site corporativo interno com autenticação segura.</li>
-
-<li><strong>Automação de Backoffice</strong> – Cliente: Icatu Seguros<br>
-Robôs para processamento de grandes volumes de dados.</li>
-
-<li><strong>Sistema de Gestão de Pagamentos</strong> – Cliente: Siemens Healthineers<br>
-Plataforma para controle e acompanhamento de pagamentos.</li>
-
-<li><strong>Robô de Extração de PDFs</strong> – Cliente: Stone<br>
-Leitura automatizada de arquivos financeiros.</li>
-
-<li><strong>Controle Orçamentário Automatizado</strong> – Cliente: Banco BV<br>
-Sistema de acompanhamento de metas e orçamento.</li>
-
-<li><strong>Integração Bancária via API</strong> – Cliente: Riachuelo<br>
-Comunicação segura com instituições financeiras.</li>
-
-<li><strong>Sistema de Gestão Contábil</strong> – Cliente: Icatu Seguros<br>
-Consolidação automática de lançamentos.</li>
-
-<li><strong>Automação de RH Corporativo</strong> – Cliente: Danone<br>
-Processamento automático de admissões e desligamentos.</li>
-
-<li><strong>Robô de Auditoria Financeira</strong> – Cliente: Siemens Healthineers<br>
-Validação automática de dados contábeis.</li>
-
-</ul>
 
 </div>
 
 </section>
 
 <script>
+
 const toggle = document.querySelector('.menu-toggle');
 const menu = document.getElementById('menu');
-toggle.addEventListener('click', () => menu.classList.toggle('open'));
+
+toggle.addEventListener('click', () => {
+menu.classList.toggle('open');
+});
+
 </script>
 
 </body>
